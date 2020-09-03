@@ -1,0 +1,101 @@
+<div class="container">
+    <div class="header-ecored">
+        <h1>5. Probabilidad clásica</h1>
+    </div><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img79.png" />
+    <div class="jumbotron bg-white">
+        <p>Se define como probabilidad a la posibilidad de que ocurra un determinado evento o suceso.</p>
+        <p>Es necesario recorrer algunos conceptos para aplicar las probabilidades al contexto real. Veamos:</p>
+        <p><b>Experimento aleatorio</b>: es la reproducción de un fenómeno cuyo resultado depende del azar. </p>
+        <h3>Ejemplo:</h3>
+        <ul>
+            <li>El lanzamiento de un dado.</li>
+            <li>El lanzamiento de una moneda.</li>
+        </ul>
+        <p><b>Evento o suceso</b>: conjunto de uno o más resultados del experimento aleatorio. </p>
+        <h3>Ejemplo: </h3>
+        <p>si A = {obtener el número 4 al lanzar un dado}, entonces el evento es A = {4} </p>
+        <p>si B = {obtener un número mayor que 3, al lanzar un dado}, el evento es B = {4,5,6}</p>
+        <p><b>Espacio muestral</b>: es el conjunto de todos los resultados posibles de un experimento aleatorio.</p>
+        <h3>Ejemplo: </h3>
+        <ul>
+            <li>Si se lanza un dado el espacio muestral está compuesto por los siguientes elementos: S = {1,2,3,4,5,6}</li>
+            <li>Si se lanza una moneda el espacio muestral está compuesto por los siguientes elementos: S = {cara, sello}</li>
+        </ul>
+        <p>La <b>probabilidad</b>, como se indicó anteriormente es la posibilidad de que ocurra un evento A. Dado el evento A, la probabilidad de que A ocurra, se denota como P(A) y se calcula mediante la fórmula:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img80.png" />
+        <p>Criterios claves:</p>
+        <ul>
+            <li>La probabilidad de A; P(A) es un valor entre 0 y 1, es decir 0 ≤ P (A)≤1.</li>
+            <li>La probabilidad de que ocurra un evento imposible es cero. Por ejemplo, la probabilidad de obtener el número 7 al lanzar un dado, numerado del 1 al 6 es cero, es decir P(X) = 0.</li>
+            <li>La probabilidad de que ocurra un evento seguro es 1. Por ejemplo, la probabilidad de obtener un número < 7 al lanzar un dado, numerado del 1 al 6 es 1, es decir P(X)=1.</li>
+        </ul>
+        <h3 class="mt-3">Ejemplo:</h3>
+        <p>Se lanza un dado n veces, cual es la probabilidad de que no salga el número 2 en los n lanzamientos.</p>
+        <h3>Solución:</h3><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img81.png" />
+        <p>Lo primero que hacemos es hallar el número de resultados posibles y eso es:</p>
+        <p>Cada vez que se lanza el dado hay 6 resultados posibles: </p>
+        <p>1° lanzamiento = 6</p>
+        <p>2° lanzamiento = 6</p>
+        <p>3° lanzamiento = 6</p>
+        <p>4° lanzamiento = 6</p>
+        <p>n° lanzamiento = 6, luego el número de resultados posibles es 6<sup>n</sup>.</p>
+        <p>El paso siguiente es calcular los casos favorables al evento, es decir aquellos en que al lanzar los dados “n” veces no salga el número 2. </p>
+        <p>1° lanzamiento = 5</p>
+        <p>2° lanzamiento = 5</p>
+        <p>3° lanzamiento = 5</p>
+        <p>4° lanzamiento = 5</p>
+        <p>n° lanzamiento = 5, en los lanzamientos se debe eliminar la posibilidad del número 2, por ello se coloca el 5 que equivale a los casos favorables. Luego el número de resultados favorables es 5<sup>n</sup>.</p>
+        <p>Ahora reemplazamos en la fórmula: P (no salga 2) = 5<sup>n</sup> / 6<sup>n</sup> o P (no salga 2) = (5/6) <sup>n</sup></p>
+    </div>
+    <div class="jumbotron bg-white" id="regla_de_la_adicion_en_probabilidades">
+        <div class="sub-line">
+            <h2>5.1 Regla de la adición en probabilidades</h2>
+        </div>
+        <p>Dos eventos son excluyentes si no pueden suceder simultáneamente, por ejemplo, el resultado de lanzar una moneda en el que puede salir cara o sello es un evento excluyente. </p>
+        <p>Si dos eventos A y B son mutuamente excluyentes, la regla especial de la adición establece que la probabilidad de que ocurra uno u otro es igual a la suma de sus probabilidades. </p>
+        <p>Si los eventos no son mutuamente excluyentes, la probabilidad de que ocurra uno u otro es igual a la suma de sus probabilidades menos la probabilidad de que sucedan al mismo tiempo.</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img82.png" />
+        <p><b>Ejemplo:</b> Basado en Ibáñez (2018):</p>
+        <p>Un colegio seleccionó una muestra de 200 estudiantes que visitaron un museo o un teatro durante el año. Las encuestas revelaron que 120 estudiantes fueron a un museo, 100 a un teatro y 60 a ambos. ¿Cuál es la probabilidad de que un estudiante haya ido a un museo o al teatro?</p>
+        <h3>Solución:</h3>
+        <p><b>A =</b> estudiantes que fueron al museo</p>
+        <p><b>B =</b> estudiantes que fueron al teatro</p>
+        <p>Hallamos la probabilidad de cada uno:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img83.png" /><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img84.png" />
+        <p>Si se suman las dos probabilidades el resultado es 1,1 y de acuerdo con los criterios claves dados, la probabilidad de un evento debe ser ≤1. La explicación es que hay estudiantes que fueron al museo y al teatro, por tanto, hay que excluir a estos:</p>
+        <p>Hallamos la probabilidad de los que fueron al mueso y al teatro:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img85.png" /><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img86.png" />
+        <p>Entonces: </p>
+        <p class="pl-5">P (A o B) = P(A) + P(B) – P (A y B)</p>
+        <p class="pl-5">P (A o B) = 0,6 + 0,5 – 0,3</p>
+        <p class="pl-5">P (A o B) = 0,8</p>
+    </div>
+    <div class="jumbotron bg-white" id="regla_de_la_multiplicacion_en_probabilidades">
+        <div class="sub-line">
+            <h2>5.2 Regla de la multiplicación en probabilidades</h2>
+        </div>
+        <p>Aquí se considera la probabilidad de que dos eventos ocurran simultáneamente, es decir, ocurre uno y otro.</p>
+        <p>Dos eventos A y B son independientes, cuando el hecho de que ocurra uno no altera la probabilidad de que ocurra el otro. </p>
+        <p>Dos eventos A y B son dependientes, si la ocurrencia de uno de ellos no afecta la ocurrencia del otro y la probabilidad de que ocurran es:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img87.png" />
+        <h3>Ejemplo: </h3>
+        <p>En un aula de clase la probabilidad que un estudiante seleccionado al azar sea bilingüe es de 0,2, mientras que la probabilidad de que el estudiante sea deportista es 0,8. Cuál es la probabilidad de que ocurran los dos eventos.</p>
+        <p><b>Evento A:</b> el estudiante sea bilingüe P(A) = 0,2</p>
+        <p><b>Evento B:</b> el estudiante sea deportista P(B) = 0,8</p>
+        <p>Los dos eventos anteriores son independientes, luego multiplicamos para hallar la probabilidad de ambos:</p>
+        <p class="ml-5">P (A y B) = P(A)*P(B)</p>
+        <p class="ml-5">P (A y B) = (0,2) *(0,8)</p>
+        <p class="ml-5">P (A y B) = 0,16</p>
+        <p>Dos eventos A y B son dependientes, si la ocurrencia de uno de ellos afecta la ocurrencia del otro y la probabilidad de que ocurran es:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img88.png" />
+        <p>La P(B|A) se lee la probabilidad de B dado que ha ocurrido A. </p>
+        <h3>Ejemplo:</h3>
+        <p>Una caja tiene 2 balones azules y 3 rojos. Si se sacan dos balones al azar sin reposición, determinar la probabilidad que ambos sean azules.</p>
+        <p>Dado que los balones se extraerán de la misma caja y no se devolverán, entonces se trata de eventos dependientes:</p>
+        <p><b>Evento A:</b> extraer un balón azul en la primera extracción</p>
+        <p><b>Evento B:</b> extraer un balón azul en la segunda extracción</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img89.png" /><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img90.png" /><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img91.png" /><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img92.png" /><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img93.png" />
+    </div>
+    <div class="jumbotron bg-white" id="aplicacion_de_las_Probabilidades">
+        <div class="sub-line">
+            <h2>5.3 Aplicación de las Probabilidades</h2>
+        </div>
+        <h1>Observa el video y comprende mejor como realizar operaciones con probabilidades aplicadas a un problema: </h1>
+    </div>
+    <div class="container contenedor"> <img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img21.png" />
+        <p class="center">Para practicar los temas aprendidos, resuelve los problemas de la página 130 – 135 de Ibáñez (2018), siguiendo el enlace: <a href="http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=8213&amp;pg=144" target="_blank">http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=8213&pg=144 </a></p>
+    </div>
+</div>

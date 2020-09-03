@@ -1,0 +1,157 @@
+
+.container
+    .header-ecored
+        h1 3. Combinatoria
+    .jumbotron.bg-white
+        p.mb-0 Se llama combinatoria a todas las posibles agrupaciones que pueden hacerse con m elementos de un conjunto. Existen tipos de combinatorias como, permutación y combinación, veamos en que consiste cada uno.
+    img.img-a.my-5(src="assets/images/pages/ilustraciones/img57.png").img-fluid
+
+    .jumbotron.bg-white#permutaciones
+        .sub-line
+            h2 3.1 Permutaciones 
+        p La permutación es la variación del orden de los elementos de un conjunto. Se destaca la palabra orden porque es necesario que los elementos tengan diferente posición. 
+
+        p La permutación permite conocer el número de maneras en las que los elementos del conjunto pueden ordenarse.
+
+        p Entonces hacer un ordenamiento de r elementos de un conjunto que contiene n elementos distintos recibe el nombre de una permutación r de n elementos y se expresa como: 
+    
+        img.img-a.my-5(src="assets/images/pages/ilustraciones/img58.png").img-fluid
+        
+        p Para calcular el número de ordenaciones o permutaciones que se pueden hacer de r elementos de un conjunto n de elementos sin repetir combinaciones, se utiliza la fórmula:
+
+        img.img-a.my-5(src="assets/images/pages/ilustraciones/img59.png").img-fluid   
+
+        p donde n! = n x (n-1) x (n-2) x (n -.) x 1, y cero (0)! = 1
+
+        p por ejemplo 5! = 5x4x3x2x1 = 120
+        .row.justify-content-center.align-items-center.my-5 
+            .col-10
+                h3 Ejemplo 1: 
+                p Sea el conjunto A = {a, b, c}, hallar las posibles combinaciones o permutaciones de los tres elementos, sin repetir combinaciones
+                p n = 3
+                p r = 3
+
+                img.img-a.my-5(src="assets/images/pages/ilustraciones/img60.png").img-fluid   
+
+                p Entonces se pueden hacer 6 combinaciones con diferente orden en sus elementos, como se muestra a continuación:
+                p.text-center (a, b, c), (a, c, b), (b, a, c), (b, c, a), (c, a, b), (c, b, a)
+
+        .row.justify-content-center.align-items-center.my-5 
+            .col-10
+                h3 Ejemplo 2: 
+
+                p De cuantas maneras diferentes podemos combinar los números 3,4,5. 
+
+                p Lo que se pide calcular es P (3 ,3) y al igual que en el ejemplo anterior se obtienen 6 permutaciones:
+
+                p.text-center (3, 4, 5), (3, 5, 4), (4, 3, 5), (4, 5, 3), (5, 3, 4), (5, 4, 3)
+
+        .sub-title-line.mt-5
+            h3 Permutación sin repetición:  
+        p Los elementos de la combinación no se pueden, luego se calcula utilizando la fórmula enunciada anteriormente.    
+
+        .sub-title-line.mt-5
+            h3 Permutación sin repetición:  
+        p Cuando se permite la repetición de r elementos contenidos en un conjunto n, para calcular el número de ordenaciones o permutaciones que se pueden hacer de r elementos, se utiliza la fórmula:    
+
+        img.img-a.my-5(src="assets/images/pages/ilustraciones/img61.png").img-fluid
+
+        .row.justify-content-center.align-items-center.my-5 
+            .col-10
+                h3 Ejemplo: 
+                p Cuántas permutaciones con repeticiones de los elementos se pueden hacer del conjunto  
+                p A = {3,4,5}
+
+                p.mb-0 n = 3 elementos 
+                p.mb-0 r = 3 es decir se seleccionan los tres para las permutaciones 
+                p nr = 33.  
+
+                p Para combinar los números 3, 4 y 5 haciendo repeticiones de los tres números; se pueden hacer 33 permutaciones es decir 27. Por ejemplo, algunas de ellas podrían ser:
+
+                .row.justify-content-center.align-items-center
+                    .col-8
+                        table.table.table-bordered.table-striped.text-center
+                            tbody
+                                tr.table3
+                                    td 333
+                                    td 334
+                                    td 335
+                                    td 343
+                                    td 353
+                            tbody
+                                tr.table3
+                                    td 444
+                                    td 443
+                                    td 445
+                                    td 454
+                                    td 434  
+
+                            tbody
+                                tr.table3
+                                    td 555
+                                    td 553
+                                    td 554
+                                    td 535
+                                    td 545
+
+                        p.text-center Tabla 7. Permutaciones del conjunto A 
+                p.mt-5 Las anteriores combinaciones pueden corresponder a las combinaciones de una clave o caja fuerte. 
+
+                h3 Recuerda que … 
+
+                p En las permutaciones el orden de los elementos si importa, para conseguir combinaciones diferentes.
+
+    .jumbotron.bg-white#aplicacion_de_las_permutaciones
+        .sub-line
+            h2 3.2	Aplicación de las permutaciones
+
+        p En una empresa se van a seleccionar tres cargos profesionales y se presentaron 12 personas en igualdad de condiciones académicas. El primer, segundo y tercer lugar en su orden ocuparán los cargos de jefe, coordinador y supervisor. Determinar de cuantas maneras posibles se puede hacer la selección.
+
+        p Datos iniciales
+
+        p.mb-0 n = 12; número de personas que se presentaron para ocupar los cargos.
+        p r = 3; personas que se deben seleccionar de las 12 para ocupar 1°,2°,3° cargo.
+
+        p Solución
+
+        p Las combinaciones que se puede hacer deben ser diferentes, luego es una permutación sin repetición, ya que las personas a ocupar los cargos deben ser 3 personas diferentes. 
+
+        p Luego se aplica: 
+
+        img.img-a.my-5(src="assets/images/pages/ilustraciones/img62.png").img-fluid
+
+        p Entonces: 
+
+        img.img-a.my-5(src="assets/images/pages/ilustraciones/img63.png").img-fluid 
+
+        p Luego hay 1320 formas de hacer la selección de los tres cargos. 
+
+    .jumbotron.bg-white#combinaciones
+        .sub-line
+            h2 3.3 Combinaciones
+
+        p Una combinación es una selección no ordenada de r elementos de un conjunto que contiene n elementos distintos. 
+
+        p Se llama combinación r de n elementos y se denota por medio de:
+
+        img.img-a.my-5(src="assets/images/pages/ilustraciones/img64.png").img-fluid 
+
+        p Una permutación de objetos implica ordenamiento, pero una combinación no toma en cuenta el orden.  
+
+    .jumbotron.bg-white#aplicacion_de_las_combinaciones
+        .sub-line
+            h2 3.4 Aplicación de las combinaciones              
+        p Se sortean dos computadoras iguales entre 10 personas. ¿De cuantas formas se puede escoger a los ganadores? 
+
+        p Datos iniciales:
+
+        p.mb-0 n = 10 personas (elementos totales del conjunto de elementos).
+        p r = 2, número de computadoras a sortear, luego se deben formar grupos de dos en dos que corresponden a los grupos ganadores posibles.
+
+        p Las dos computadoras son iguales, y no importa el orden en que las personas salgan ganadoras, lo que importa es que salgan dos ganadores, es por ellos que es una combinación. 
+
+        p Entonces: 
+
+        img.img-a.my-5(src="assets/images/pages/ilustraciones/img65.png").img-fluid
+        
+        p Luego hay 45 formas de escoger los ganadores.               

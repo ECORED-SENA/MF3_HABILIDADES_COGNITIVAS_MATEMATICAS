@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Funciones lineales, estadística y geometría</title>
+        <meta meta name="description" content="La resolución de ecuaciones desarrolla el pensamiento algebraico del individuo, a la vez que consigue hallar el valor de una o dos variables que se desconocen. Igualmente, la geometría, permite determinar las dimensiones de todos los espacios y objetos que nos rodean y que hacen parte de nuestra vida y situaciones cotidianas.">
+        <link rel="icon" type="image/svg+xml" href="assets/images/logos/senaLogo.svg">
+        <link rel="stylesheet" href="assets/fonts/feather/feather.css">
+        <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.css">
+        <link href="assets/css/fancybox.css" rel="stylesheet">
+        <link href="assets/css/animate.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body class="theme-dark page-header-textura" id="page-home">
+        <header class="curso-presentacion page-header" id="CursoPresentacion">
+            <div class="page-textura">
+                <div class="container">
+                    <div class="curso-topbar justify-content-center justify-content-md-between"><a class="curso-topbar__logo"><svg xmlns="http://www.w3.org/2000/svg" width="168.273" height="164.177" viewBox="0 0 168.273 164.177">
+                                <path id="SENA_LOGO" data-name="SENA LOGO" d="M85.349,1a18.09,18.09,0,1,0,18.09,18.09h0A18.1,18.1,0,0,0,85.349,1ZM25.617,42.983a33.722,33.722,0,0,0-9.386,1.024,11.156,11.156,0,0,0-5.12,2.56A5.346,5.346,0,0,0,10.086,52.2c.683,1.707,2.56,2.9,4.608,3.584,4.437,1.536,9.386,1.877,13.994,2.731a5.1,5.1,0,0,1,2.389,1.024,1.369,1.369,0,0,1-.683,2.048,9.146,9.146,0,0,1-5.291.683A8.354,8.354,0,0,1,20.5,61.244a1.962,1.962,0,0,1-.853-2.389H9.233A7.663,7.663,0,0,0,10.6,63.463a7.59,7.59,0,0,0,4.267,2.389A28.541,28.541,0,0,0,23.4,66.876,52.426,52.426,0,0,0,35,66.023a11.043,11.043,0,0,0,5.8-2.9,5.358,5.358,0,0,0-1.365-8.533,21.267,21.267,0,0,0-5.8-2.048c-3.072-.683-5.973-1.024-9.045-1.536a9.114,9.114,0,0,1-3.072-.853,1.226,1.226,0,0,1,0-2.219,9.369,9.369,0,0,1,4.437-.683,10.554,10.554,0,0,1,4.608.853A1.877,1.877,0,0,1,31.59,49.81h9.9a5.669,5.669,0,0,0-1.195-3.584A8.875,8.875,0,0,0,35.515,43.5c-3.584-.341-6.827-.512-9.9-.512Zm21.333.683V67.217H75.792V62.1H57.531V57.489H73.744V52.54H57.531V48.786H75.109v-5.12Zm47.615,0H81.253V67.217H91.322V51.346l13.824,15.872h13.824V43.666H108.9v15.7Zm42.495,0L120.676,67.217h10.581l2.56-4.267H150.2l2.389,4.267h11.776l-15.53-23.551ZM142.35,49.3l5.12,8.533h-10.41ZM.7,74.044l.171,12.8L49,86.673c2.389.512,3.925,2.048,3.413,5.8l-29.7,51.711,9.557,9.045L78.01,74.044Zm91.646,0L137.4,152.89l9.9-8.874L117.433,92.3c-.512-3.584.853-5.291,3.413-5.8l48.127.171V74.044ZM84.837,87.185,42.512,159.546l11.264,5.461,28.159-47.615a4.283,4.283,0,0,1,2.9-1.195,4.681,4.681,0,0,1,3.072,1.195l28.159,47.786,11.605-5.973Z" transform="translate(-0.7 -1)" fill="#FF6B00" />
+                            </svg>
+                        </a><a class="curso-topbar__menubar collapsed btn-menu-responsive d-none" data-toggle="collapse" href="#curso-topbar__nav" aria-expanded="false"><span></span><span></span><span></span></a>
+                        <nav class="curso-topbar__nav collapse show d-none d-md-block" id="curso-topbar__nav">
+                            <ul class="curso-topbar__list">
+                                <li class="curso-topbar__item"><a class="curso-topbar__link" href="#ResultadosAprendizaje"><span class="text-white">Resultados de aprendizaje</span></a></li>
+                                <li class="curso-topbar__item"><a class="curso-topbar__link" href="#IndiceTematico"><span class="text-white">Índice temático</span></a></li>
+                                <li class="curso-topbar__item"><a class="curso-topbar__link" href="#Creditos"><span class="text-white">Créditos</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="curso-portada">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-6">
+                                <h3 class="curso-subtitulo" id="curso-titulo-componente">Habilidades cognitivas en matemáticas</h3>
+                                <h1 class="curso-titulo" id="curso-titulo-tema">Funciones lineales, estadística y geometría</h1>
+                                <div class="brand-line-primary"></div>
+                                <p class="curso-descripcion">La resolución de ecuaciones desarrolla el pensamiento algebraico del individuo, a la vez que consigue hallar el valor de una o dos variables que se desconocen. Igualmente, la geometría, permite determinar las dimensiones de todos los espacios y objetos que nos rodean y que hacen parte de nuestra vida y situaciones cotidianas.</p>
+                            </div>
+                            <div class="col-12 col-lg-6 text-center">
+                                <div class="d-none d-lg-block"><img class="curso-imagen" src="assets/images/header/header_media.svg" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="curso-resultados section bg-base-light" id="ResultadosAprendizaje">
+            <div class="container">
+                <h2> Resultados de <br>aprendizaje</h2>
+                <div class="brand-line-primary"></div>
+                <div class="card resultado-item">
+                    <div class="card-body">
+                        <ul class="bg-color-dark">
+                            <li> <span>20201501-03 - Verificar los resultados de los procedimientos matemáticos conforme con los requerimientos de los diferentes contextos.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="curso-indice-tematico section" id="IndiceTematico">
+            <div class="container">
+                <h2>Desarrollo de <br>contenidos</h2>
+                <div class="brand-line-primary"></div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-10">
+                        <div class="card wow flipInX" data-wow-delay=".4s">
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush list my-n3 nav-temas">
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-play"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="main.html#page/introduccion/">Introducción</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="main.html#page/introduccion/">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">1</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="main.html#page/relaciones_y_funciones/">Relaciones y funciones</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="main.html#page/relaciones_y_funciones/">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">2</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="main.html#page/ecuaciones/">Ecuaciones</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="main.html#page/ecuaciones/">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">3</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="main.html#page/combinatoria/">Combinatoria</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="main.html#page/combinatoria/">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">4</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="main.html#page/aleatoriedad/">Aleatoriedad</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="main.html#page/aleatoriedad/">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">5</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="main.html#page/probabilidad_clasica/">Probabilidad clásica</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="main.html#page/probabilidad_clasica/">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">6</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="main.html#page/geometria_plana/">Geometría plana</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="main.html#page/geometria_plana/">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mainContent">
+            <div id="introduccion">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Introducción </h1>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card"><img class="img-a mx-0 img-fluid" src="assets/images/pages/ilustraciones/mf1.jpg">
+                                <div class="card-body mt-0">
+                                    <p>Los conceptos matemáticos y la forma de operarlos están directamente vinculados con las actividades que realizamos en la vida cotidiana, por ejemplo, nociones como relación y función están continuamente en nuestras vidas. Por ejemplo, cuando a cada persona le corresponde un número de identificación como el registro de nacimiento, la tarjeta de identidad, la cédula o el pasaporte y también cuando se hacen proyecciones económicas o se estudian fenómenos de la naturaleza.</p><br>
+                                    <p>En esta unidad estudiaremos las diferentes relaciones de correspondencia entre elementos, las funciones matemáticas que coordinan estas relaciones, y la forma de combinar estos elementos, de tal manera que no se repitan. Sumado a esto, se estudiarán los problemas cotidianos de los que desconocemos variables, para entender qué necesitamos de un sistema para hallarlas. Así mismo, analizaremos las tendencias de los datos que se basan en información histórica, que se aplican a pronósticos que están en la cotidianidad para predecir resultados en diferentes tópicos de la economía y en las ciencias.</p><br>
+                                    <p>Finalmente, todos los conceptos que podemos aplicar en las situaciones rutinarias están ligados a la forma de ubicarnos y orientarnos en el espacio que nos rodea, por lo tanto, también abordaremos el entorno relacionado con los objetos y figuras geométricas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-1">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>1. Relaciones y funciones</h1>
+                    </div><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img1.png">
+                    <div class="jumbotron bg-white" id="relacion">
+                        <div class="sub-line">
+                            <h2>1.1 Relación</h2>
+                        </div>
+                        <p>Es la correspondencia de un primer conjunto llamado Dominio o Partida, con un segundo conjunto llamado Recorrido, Rango o Llegada, de tal manera que a cada elemento del Dominio le corresponde un elemento del Rango. </p>
+                        <p>Todas las relaciones pueden graficarse en el diagrama de Venn, en el que se representan los conjuntos y en el plano cartesiano.</p>
+                        <p>Toda relación definida de A en B es cualquier subconjunto de parejas ordenadas (par ordenado) del producto cartesiano A x B</p>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col-12 col-md-10"><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img2.png"></div>
+                        </div>
+                        <p class="mt-5">Cada uno de los siguientes subconjuntos es una relación definida de A en B:
+                        <ul>
+                            <li>R1 = {(2,1), (3,1)}; se puede definir como el conjunto de pares cuyo segundo elemento es 1  y se exresa como R1 = {(x, y) | y = 1} </li>
+                        </ul>
+                        </p>
+                        <div class="row justify-content-center align-items-stretch mt-5">
+                            <div class="col-12 col-md-6">
+                                <p class="mt-3">Diagrama de Venn</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img3.png">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="mt-3">Plano Cartesiano </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img4.png">
+                            </div>
+                        </div>
+                        <p class="text-blue">Gráfica 1. Diagrama de Venn y puntos en el plano cartesiano de R1
+                        <ul>
+                            <li> R2 = {(2,4), (2,5), (3,4), (3,5)}; se puede definir por los pares, cuyo primer componente es menor que el segundo y se expresa como: R2 = {(x, y) | x < y}</li>
+                        </ul>
+                        </p>
+                        <div class="row justify-content-center align-items-stretch mt-5">
+                            <div class="col-12 col-md-6">
+                                <p class="mt-3">Diagrama de Venn</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img5.png">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="mt-3">Plano Cartesiano </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img6.png">
+                            </div>
+                        </div>
+                        <p class="text-blue">Gráfica 2. Diagrama de Venn y puntos en el plano cartesiano de R2
+                        <ul>
+                            <li> R3 = {(2,4), (3,5)}; se puede definir por los pares que cumplen en el segundo componente mayor en dos unidades que el primero y se expresa como: R3 = {(x, y) | y = x + 2}</li>
+                        </ul>
+                        </p>
+                        <div class="row justify-content-center align-items-stretch mt-5">
+                            <div class="col-12 col-md-6">
+                                <p class="mt-3">Diagrama de Venn</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img7.png">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="mt-3">Plano Cartesiano </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img8.png">
+                            </div>
+                        </div>
+                        <p class="text-blue">Gráfica 3. Diagrama de Venn y puntos en el plano cartesiano de R3 </p>
+                    </div><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img9.png">
+                    <div class="jumbotron bg-white" id="funcion">
+                        <div class="sub-line">
+                            <h2>1.2 Función</h2>
+                        </div>
+                        <p>Según Aguilar (2015); una función es la relación que existe entre dos conjuntos, de manera que a los elementos de x les corresponde a lo más un elemento de y. </p>
+                        <p>Se denota por: </p>
+                        <div class="row">
+                            <div class="col-2 bg-p">
+                                <p class="text-center mt-3">y=f(x)</p>
+                            </div>
+                        </div>
+                        <p>Se lee, y es igual a f de x; </p>
+                        <p class="mb-0">Donde: </p>
+                        <p class="mb-0">x: variable independiente </p>
+                        <p class="mb-0">y: variable dependiente</p>
+                        <p class="mb-0">f(x): regla de correspondencia </p>
+                        <div class="row justify-content-center align-items-stretch mt-5">
+                            <div class="col-12 col-md-3">
+                                <p class="ejemplo text-center">Constante</p>
+                            </div>
+                            <div class="col-12 col-md-9 vl">
+                                <p>Es la función que asocia un mismo valor a cada valor de la variable independiente:</p>
+                                <p>Se denota por: </p>
+                                <div class="row pl-2">
+                                    <div class="col-2 bg-p">
+                                        <p class="text-center mt-3">y=k</p>
+                                    </div>
+                                </div>
+                                <p>La representación gráfica es una línea recta paralela al eje X, sobre la ordenada que toma el valor de k.</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col-12 col-md-10"><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img10.png"></div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col-12 col-md-10"><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img11.png"></div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white" id="lineal">
+                        <div class="sub-line">
+                            <h2>1.3 Función lineal</h2>
+                        </div>
+                        <p>Se llama función lineal a la función que tiene la siguiente estructura:</p>
+                        <div class="row">
+                            <div class="col-2 bg-p">
+                                <p class="text-center mt-3">y=mx + b</p>
+                            </div>
+                        </div>
+                        <p class="mb-0">Donde:</p>
+                        <p class="mb-0">m= es una constante que corresponde a un número real diferente de cero</p>
+                        <p class="mb-0">b = distancia del punto (0,0) al punto (0, b).</p>
+                    </div>
+                    <div class="jumbotron bg-white" id="graficas">
+                        <div class="sub-line">
+                            <h2>1.4 Análisis de gráficas </h2>
+                        </div>
+                        <p>Para representar la función lineal se debe tener en cuenta los valores que toma, de acuerdo con las siguientes condiciones:</p>
+                        <ul>
+                            <li>La gráfica es una línea recta que pasa por el origen del plano cartesiano o por el punto (0,0)</li>
+                            <li>El valor de m es una constante de proporcionalidad. </li>
+                            <li>Si m > 0 se dice que la función es creciente, es decir, que a medida que  aumenta el valor de x también aumenta el valor de y.</li>
+                        </ul>
+                        <p>Gráficamente: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img12.png">
+                        <p class="text-blue">Gráfica 5. Gráfica de una función creciente </p>
+                        <ul class="mt-5">
+                            <li>Si m < 0, la función es decreciente; es decir, que a medida que aumenta  el valor de x, disminuye el valor de y.</li>
+                        </ul><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img13.png">
+                        <p class="text-blue">Gráfica 6. Gráfica de una función decreciente </p>
+                        <p class="mt-5">A medida que aumenta el valor de x, se mantiene el mismo valor de y.</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img14.png">
+                        <p class="text-blue">Gráfica 7. Gráfica de una función constante </p>
+                    </div>
+                    <div class="jumbotron bg-white" id="aplicacion">
+                        <div class="sub-line">
+                            <h2>1.5 Aplicación de las funciones lineales</h2>
+                        </div>
+                        <p>Las funciones tienen aplicación en la vida cotidiana, veamos algunos ejemplos: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img15.png"><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img16.png">
+                        <p>Solución: </p>
+                        <p>En la tabla que se observa a continuación se muestra la distancia que recorre el tren cada hora.</p>
+                        <p>Obsérvese que la distancia está en función del tiempo, donde se conserva una velocidad media que equivale a una constante = 250, que en este caso es m y al expresar la función se tiene que: D(t) = 250t </p>
+                        <table class="table table-bordered table-striped mt-5">
+                            <tbody>
+                                <tr>
+                                    <td>t (tiempo en horas)</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>........ </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr class="table2">
+                                    <td>D (t) distancia recorrida en Km</td>
+                                    <td>250</td>
+                                    <td>500</td>
+                                    <td>750</td>
+                                    <td>1000</td>
+                                    <td>1250</td>
+                                    <td>........ </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="text-blue">Tabla 1. Distancia que recorre el tren en función del tiempo t</p>
+                        <p>Cada punto de la función es entonces: (250, 1), (500,2), (750,3), (1000,4), (1250,5), …. y así sucesivamente. Si el tiempo es cero, la distancia es cero, luego la recta pasa por el punto (0,0).</p>
+                        <p>Al graficar tenemos: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img17.png">
+                        <p>La función es creciente, puesto que a medida que aumenta el tiempo (t), aumenta la distancia (D) recorrida por el tren. </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img18.png"><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img19.png">
+                        <table class="table table-bordered table-striped">
+                            <tbody>
+                                <tr>
+                                    <td>tiempo en minutos (x)</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>........ </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr class="table2">
+                                    <td>Temperatura en °C (y)</td>
+                                    <td>10</td>
+                                    <td>20</td>
+                                    <td>30</td>
+                                    <td>40</td>
+                                    <td>50</td>
+                                    <td>........ </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="text-blue">Tabla 2. Temperatura en °C del líquido en función del tiempo t </p>
+                        <p>Solución: </p>
+                        <p>Al graficar los puntos que representan la relación dada, es decir, el tiempo que transcurre y la temperatura del líquido se obtiene una línea recta que no pasa por el punto (0,0). </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img20.png">
+                        <p class="text-blue">Gráfica 9. Gráfica de la C° del líquido y el tiempo t </p>
+                        <p>La gráfica pasa por el punto (0, b), luego la estructura de la función que representa es de la forma </p>
+                        <div class="row">
+                            <div class="col-2 bg-p">
+                                <p class="text-center mt-3">Y = mx + b; donde b = 10</p>
+                            </div>
+                        </div>
+                        <p>La constante de proporcionalidad es 10, puesto que los valores de la temperatura del líquido aumentan como se muestra a continuación:</p>
+                        <p class="mb-0">10 x 1 = 10</p>
+                        <p class="mb-0">10 x 2 = 20</p>
+                        <p class="mb-0">10 x 3 = 30</p>
+                        <p class="mb-0">10 x 4 = 40 </p>
+                        <p class="mb-0">10 x 5 = 50</p>
+                        <p>El número 10 es la constante de proporcionalidad, la T° del líquido aumenta en función del tiempo, luego la función se puede expresar como: Y = 10x + 10.</p>
+                        <p>La función es creciente, puesto que a medida que aumenta x, aumenta y o a medida que aumenta el tiempo, aumenta la t° del líquido. </p>
+                    </div>
+                    <div class="container contenedor"> <img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img21.png">
+                        <p class="center">Puedes practicar sobre las funciones lineales con problemas cotidianos de Aguilar (2015), Capítulo 7. Función lineal: pp. 391, enlace: <a href="http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=4829&amp;pg=417" target="_blank">http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=4829&pg=417 </a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-2">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>2. Ecuaciones</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <p class="mb-0">desconocidos o incógnitas. Estos datos están relacionados mediante operaciones matemáticas.</p>
+                    </div><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img22.png">
+                    <div class="jumbotron bg-white" id="ecuaciones_lineales">
+                        <div class="sub-line">
+                            <h2>2.1 Ecuaciones lineales</h2>
+                        </div>
+                        <p>De acuerdo con lo anterior la ecuación lineal es una igualdad matemática que tiene la siguiente estructura: </p>
+                        <div class="row justify-content-center align-items-center my-5">
+                            <div class="col-2 bg-p2">
+                                <p class="text-center mt-3">Ax + By + C = 0 </p>
+                            </div>
+                        </div>
+                        <p>donde A, B y C son constantes reales tales que A y B no son cero. </p>
+                        <div class="row justify-content-center align-items-center my-5">
+                            <div class="col-10">
+                                <p>Ejemplo:</p>
+                                <ul>
+                                    <li>3x − 4y − 4 = 0, es una ecuación lineal con: A = 3, B = −4 y C = −4</li>
+                                    <li>Dada la ecuación 3x = 5y − 7, también se puede escribir de la forma: 3x − 5y + 7 = 0 y es una ecuación lineal con: A = 3, B = -5, C = 7 </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sub-title-line">
+                            <h3>Solución de una ecuación lineal</h3>
+                        </div>
+                        <p>Una ecuación lineal tiene como conjunto solución todos los pares ordenados (x, y), que satisfacen la ecuación, donde x e y son números reales.</p>
+                        <div class="row justify-content-center align-items-center my-5">
+                            <div class="col-10">
+                                <p>Ejemplo:Basado en Aguilar (2015)</p>
+                                <ul>
+                                    <li>Verificar si el par ordenado (1, -4) es solución de la ecuación: 2x -3y -14 = 0</li>
+                                </ul>
+                                <p>Solución</p>
+                                <ul>
+                                    <li>Lo que se debe hacer es sustituir los valores de (x, y) = (1,-4) en la ecuación y se debe cumplir la igualdad: </li>
+                                </ul><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img23.jpg">
+                            </div>
+                        </div>
+                        <p>Lo anterior quiere decir que el par (1, -4) si es solución de la ecuación 2x -3y -14 = 0, por que se cumple la igualdad.</p>
+                        <div class="sub-title-line mt-5">
+                            <h3>Gráfica de una ecuación lineal </h3>
+                        </div>
+                        <p>Para elaborar la gráfica de una ecuación lineal se requieren dos puntos para trazar la línea en el plano cartesiano.</p>
+                        <div class="row justify-content-center align-items-center my-5">
+                            <div class="col-10">
+                                <p>Ejemplo: Basado en Aguilar (2015): </p>
+                                <ul>
+                                    <li>Trazar la gráfica para la ecuación lineal 2x -3y +7 = 0, entonces se deben conocer dos puntos de la recta, por lo que se toman dos puntos arbitrarios para x y se despeja y. </li>
+                                </ul>
+                                <p>Entonces sustituimos en la ecuación x = -2 para conocer y: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img24.jpg">
+                                <p>entonces el primer punto es (-2, 1), ahora sustituimos en la ecuación x = 1 para conocer y</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img25.jpg">
+                                <p>entonces el primer punto es (1, 3), la gráfica de la ecuación sustituyendo estos dos puntos:</p>
+                                <p>(-2, 1), (1, 3) es la que se observa a continuación: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img26.jpg">
+                                <p class="text-center">Gráfica 10. Gráfica de la ecuación lineal 2x -3y +7 = 0 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container contenedor"><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/fondo.svg">
+                        <p class="centrado"><b>Consulta el recurso externo para ampliar el conocimiento</b><br></br> Puedes practicar con problemas cotidianos de Aguilar (2015), Capítulo 7. FUNCION LINEAL: pp. 397, enlace: <br></br><a href="http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=4829&amp;pg=423" target="_blank">http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=4829&pg=423</a></p>
+                    </div>
+                    <div class="jumbotron bg-white" id="ecuaciones_lineales_primer_grado">
+                        <div class="sub-line">
+                            <h2>2.2 Ecuaciones lineales de primer grado </h2>
+                        </div>
+                        <p>Una ecuación de primer grado es una igualdad que involucra una o más variables elevadas a la primera potencia y con la cual se realizan operaciones de suma y resta:</p>
+                        <div class="row">
+                            <div class="col-2 bg-p">
+                                <p class="text-center mt-3">ax + b = 0, a ≠ 0 </p>
+                            </div>
+                        </div>
+                        <p> En la anterior expresión x es la variable de la ecuación, elevada a la potencia 1. A las expresiones que quedan a lado y lado de la igualdad se les denomina términos.</p>
+                        <p>Los valores de las variables o incógnitas que hacen que se cumpla la igualdad se llaman soluciones de la ecuación.</p>
+                        <p>Las ecuaciones de primer grado pueden tener más de una variable o incógnita y en tal caso se expresa como:</p>
+                        <div class="row">
+                            <div class="col-2 bg-p">
+                                <p class="text-center mt-3">Y = ax + b; a≠0</p>
+                            </div>
+                        </div>
+                        <p>La gráfica de esta ecuación es una línea recta, por ello se le llama ecuación lineal y se realiza sobre un plano cartesiano, proporcionando valores a la variable x, para determinar los valores que toma la variable y, luego con dichos valores se construye la recta. </p>
+                        <div class="row justify-content-center align-items-center my-5">
+                            <div class="col-10">
+                                <p>Ejemplo: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img27.jpg">
+                                <p class="text-center">Gráfica 11. Términos de una ecuación lineal</p>
+                            </div>
+                        </div>
+                        <p>La variable o incógnita es x y es una ecuación, es de primer grado porque x esta elevada a la potencia 1. </p>
+                        <p>Si x = 3, vamos a comprobar que este valor es una solución de la ecuación, entonces, sustituimos la x por 3: </p>
+                        <div class="row justify-content-center align-items-center my-5">
+                            <div class="col-10"><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img28.jpg"></div>
+                        </div>
+                        <p>Obsérvese que se cumple la igualdad, luego x = 3 es una solución de la ecuación. </p>
+                        <div class="row justify-content-center align-items-center my-5">
+                            <div class="col-10">
+                                <p>Ejemplo: realizar la gráfica de la ecuación y = 3x + 2</p>
+                                <p>Proporcionamos valores arbitrarios a la variable x, que estén cercanos a cero para encontrar más fácilmente los extremos de la recta, entonces podemos escoger los valores de (-2,0,1) y obtenemos:</p>
+                                <ul>
+                                    <li>y = 3 (-2) +2; y = -6+2; y = -4</li>
+                                    <li>y = 3 (0) +2; y = 0+2; y = 2</li>
+                                    <li>y = 3 (1) +2; y = 3+2; y = 5</li>
+                                </ul>
+                                <p>Entonces:</p>
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-8">
+                                        <table class="table table-bordered table-striped text-center">
+                                            <tbody>
+                                                <tr class="table1">
+                                                    <td>X</td>
+                                                    <td>Y </td>
+                                                </tr>
+                                            </tbody>
+                                            <tbody>
+                                                <tr class="table3">
+                                                    <td>2</td>
+                                                    <td>-4 </td>
+                                                </tr>
+                                            </tbody>
+                                            <tbody>
+                                                <tr class="table3">
+                                                    <td>0</td>
+                                                    <td>2</td>
+                                                </tr>
+                                            </tbody>
+                                            <tbody>
+                                                <tr class="table3">
+                                                    <td>1</td>
+                                                    <td>5 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="text-center mt-3">Tabla 3. Valores de x para la ecuación Y = 3x +2</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-10"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img29.jpg">
+                                <p class="mt-3 text-center">Gráfica 12. Gráfica de la ecuación Y = 3x + 2 </p>
+                                <p class="mb-0">Obsérvese que con los valores que toma la variable x, se obtienen valores para y por consiguiente se puede dibujar la gráfica. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white" id="aplicacion_ecuaciones_lineales_primer_grado">
+                        <div class="sub-line">
+                            <h2>2.3 Aplicación de las ecuaciones lineales de primer grado</h2>
+                        </div>
+                        <p>Las ecuaciones de primer grado se aplican en la vida real en diferentes situaciones, veamos algunas de ellas en los siguientes ejemplos. </p>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col-10"><strong>Ejemplo:</strong>
+                                <p>Un tren tiene 32 asientos disponibles en primera clase y 50 asientos en clase económica, si se venden todos, el valor recaudado sería de US$14600. Se han vendido 10 asientos en primera clase y 40 en clase económica obteniendo un total recaudado de US$7000. Determinar cuánto vale comprar un asiento en cada clase. </p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-stretch mt-5">
+                            <div class="col-12 col-md-5 mr-1 bg-color2 px-5 py-5">
+                                <h3 class="mb-5">Datos iniciales</h3>
+                                <p>Número de asientos primera clase = 32</p>
+                                <p>Número de asientos clase económica = 50</p>
+                                <p>Valor total recaudado si se venden todos los asientos = US$14600</p>
+                                <p>Asientos vendidos de primera clase = 10</p>
+                                <p>Asientos vendidos de primera clase = 40</p>
+                                <p>Valor total recaudado de los asientos </p>
+                                <p>vendidos = US$7000 </p>
+                            </div>
+                            <div class="col-12 col-md-5 bg-color2 px-5 py-5">
+                                <h3 class="mb-5">Variables de la ecuación</h3>
+                                <p>x = valor de un asiento en primera clase.</p>
+                                <p>y = valor de un asiento clase económica. </p>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3">Tabla 4. Datos y variables del problema </p>
+                        <p>Solución: </p>
+                        <p class="mb-0">Si se vendieran todos los asientos de la primera clase, el valor recaudado seria = 32x</p>
+                        <p>Si se vendieran todos los asientos de la clase económica, el valor recaudado seria = 50y</p>
+                        <p>Se plantea la ecuación para el valor total recaudado si se vendieran todos los asientos: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img30.jpg">
+                        <p>Se plantea la ecuación para el valor total recaudado de los asientos vendidos de primera clase y de la clase económica:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img31.jpg">
+                        <p>Luego las ecuaciones que se deben resolver para hallar el valor de cada asiento son:</p>
+                        <p>De cada ecuación se despeja la variable x, luego se igualan, entonces de la primera ecuación al despejar x, obtenemos:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img32.jpg">
+                        <p>De la segunda ecuación al despejar x, obtenemos:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img33.jpg">
+                        <p>Ahora se igualan las dos ecuaciones para despejar y, se obtiene:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img34.jpg">
+                        <p>Resolviendo la ecuación se despeja utilizando las reglas algebraicas; es decir 32 que está a un lado de la igualdad pasa a multiplicar al otro lado: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img35.jpg">
+                        <p>lo anterior quiere decir que el valor de cada asiento de clase económica es de US$100; ahora debemos reemplazar el valor de y en cualquiera de las ecuaciones que tiene despejada la x, entonces:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img36.jpg">
+                        <p>lo anterior quiere decir que el valor de cada asiento de primera clase es de US$300 </p>
+                    </div>
+                    <div class="jumbotron bg-white" id="ecuaciones_segundo_grado">
+                        <div class="sub-line">
+                            <h2>2.4 Ecuaciones de segundo grado </h2>
+                        </div>
+                        <p class="mb-0">Una ecuación de segundo grado es una igualdad que involucra una o más variables elevadas a la segunda potencia y con la cual se realizan operaciones de suma y resta:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img37.jpg">
+                        <p>En la anterior expresión x es la variable de la ecuación, elevada a la potencia 2. </p>
+                        <p>A las expresiones que quedan a lado y lado de la igualdad se les denomina términos. Los valores de las variables o incógnitas que hacen que se cumpla la igualdad se llaman soluciones de la ecuación.</p>
+                        <p class="mb-0">Al igual que en las ecuaciones de primer grado las de segundo grado pueden tener más de una variable o incógnita y en tal caso se expresa como: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img38.jpg">
+                        <p class="mb-0">Para resolver una ecuación cuadrática, esta se debe igualar a cero y se tiene: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img39.jpg">
+                        <p class="mb-0">a, b y c son constantes y se aplica la fórmula:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img40.jpg">
+                        <p class="mb-0">La parte que se encuentra dentro del radical (b2 – 4ac) se llama determinante y brinda información acerca de la solución de la ecuación, es decir si:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img41.jpg">
+                        <p>La gráfica de esta ecuación es una parábola, y se realiza sobre un plano cartesiano, proporcionando valores a la variable x, para determinar los valores que toma la variable y, luego con dichos valores se hace la construcción. </p>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col-8">
+                                <ul>
+                                    <li>Y = (-3)2 + 2(-3) +1; y = 9 -6 + 1; y = 4</li>
+                                    <li>Y = (-2)2 + 2(-2) +1; y = 4 -4 + 1; y = 1</li>
+                                    <li>Y = (-1)2 + 2(-1) +1; y = 1 -2 + 1; y = 0</li>
+                                    <li>Y = (0)2 + 2(0) +1; y = 0 + 0 + 1; y = 1</li>
+                                    <li>Y = (1)2 + 2(1) +1; y = 1 +2 + 1; y = 4 </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-8">
+                                <table class="table table-bordered table-striped text-center">
+                                    <tbody>
+                                        <tr class="table1">
+                                            <td>X</td>
+                                            <td>Y </td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr class="table3">
+                                            <td>-3</td>
+                                            <td>4 </td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr class="table3">
+                                            <td>-2</td>
+                                            <td>1</td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr class="table3">
+                                            <td>-1</td>
+                                            <td>0 </td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr class="table3">
+                                            <td>0</td>
+                                            <td>1</td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr class="table3">
+                                            <td>1</td>
+                                            <td>4 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="text-center mt-3">Tabla 5. Valores de x de la ecuación y = x2 + 2x +1</p>
+                            </div>
+                        </div><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img42.jpg">
+                        <p class="text-center mt-3">Gráfica 13. Gráfica de la ecuación y = x2 + 2x + 1 </p>
+                        <p>Obsérvese que con los valores que toma la variable x, se obtienen valores para y por consiguiente se puede dibujar la gráfica. </p>
+                        <p>Para ver la solución de la ecuación cuadrática x<sup>2</sup> + 2x + 1 = 0, observe que:</p><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img43.png">
+                        <h3>a = 1, b = 2, c = 1, entonces:</h3><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img44.png">
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="sub-line">
+                            <h2>2.5 Aplicación de las ecuaciones de segundo grado</h2>
+                        </div>
+                        <div class="row justify-content-center align-items-stretch mt-5">
+                            <div class="col-12 col-md-5 mr-1 bg-color2 px-5 py-5">
+                                <h3 class="mb-5">Datos iniciales</h3>
+                                <p>Valor de las peras compradas = US$600</p>
+                                <p>Peras que le hubieran dado de más al siguiente día = 75</p>
+                                <p>Valor más barato de cada pera = US$4</p>
+                            </div>
+                            <div class="col-12 col-md-5 bg-color2 px-5 py-5">
+                                <h3 class="mb-5">Variables de la ecuación</h3>
+                                <p>X = número de peras compradas </p>
+                                <p>Y = precio de cada pera</p>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3">Tabla 6. Datos iniciales y variables del problema</p>
+                        <h3>Solucion: </h3>
+                        <p>La primera ecuación que se puede plantear con la cantidad inicial de peras es: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img45.png">
+                        <p>La segunda ecuación se puede plantear con la cantidad de peras que hubiera comprado al siguiente día con el nuevo precio: hubiera comprado 75 peras más a 4 dólares menos cada una.</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img46.png">
+                        <p>Sustituyendo el valor de x en la segunda ecuación se tiene que: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img47.png">
+                        <p>Resolviendo los fraccionarios: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img48.png">
+                        <p>Los denominadores pasan a multiplicar los términos que se encuentran a ambos lados de la igualdad, así:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img49.png">
+                        <p>Organizando la ecuación:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img50.png">
+                        <p>Simplificando por 75:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img51.png">
+                        <p>Aplicando la fórmula: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img52.png">
+                        <p>se tiene que: a = 1, b = 4, c= -32</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img53.png">
+                        <p>hay dos soluciones:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img54.png"><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img55.png">
+                        <p><b>y1</b>, no es una solución válida puesto que da un valor negativo, luego la solución correcta es <b>y2</b>, entonces reemplazamos este valor en la primera ecuación:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img56.png">
+                        <p>Entonces Juan compró 150 peras a US$4 cada una. </p>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-3">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>3. Combinatoria</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <p class="mb-0">Se llama combinatoria a todas las posibles agrupaciones que pueden hacerse con m elementos de un conjunto. Existen tipos de combinatorias como, permutación y combinación, veamos en que consiste cada uno.</p>
+                    </div><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img57.png">
+                    <div class="jumbotron bg-white" id="permutaciones">
+                        <div class="sub-line">
+                            <h2>3.1 Permutaciones </h2>
+                        </div>
+                        <p>La permutación es la variación del orden de los elementos de un conjunto. Se destaca la palabra orden porque es necesario que los elementos tengan diferente posición. </p>
+                        <p>La permutación permite conocer el número de maneras en las que los elementos del conjunto pueden ordenarse.</p>
+                        <p>Entonces hacer un ordenamiento de r elementos de un conjunto que contiene n elementos distintos recibe el nombre de una permutación r de n elementos y se expresa como: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img58.png">
+                        <p>Para calcular el número de ordenaciones o permutaciones que se pueden hacer de r elementos de un conjunto n de elementos sin repetir combinaciones, se utiliza la fórmula:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img59.png">
+                        <p>donde n! = n x (n-1) x (n-2) x (n -.) x 1, y cero (0)! = 1</p>
+                        <p>por ejemplo 5! = 5x4x3x2x1 = 120</p>
+                        <div class="row justify-content-center align-items-center my-5">
+                            <div class="col-10">
+                                <h3>Ejemplo 1: </h3>
+                                <p>Sea el conjunto A = {a, b, c}, hallar las posibles combinaciones o permutaciones de los tres elementos, sin repetir combinaciones</p>
+                                <p>n = 3</p>
+                                <p>r = 3</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img60.png">
+                                <p>Entonces se pueden hacer 6 combinaciones con diferente orden en sus elementos, como se muestra a continuación:</p>
+                                <p class="text-center">(a, b, c), (a, c, b), (b, a, c), (b, c, a), (c, a, b), (c, b, a)</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center my-5">
+                            <div class="col-10">
+                                <h3>Ejemplo 2: </h3>
+                                <p>De cuantas maneras diferentes podemos combinar los números 3,4,5. </p>
+                                <p>Lo que se pide calcular es P (3 ,3) y al igual que en el ejemplo anterior se obtienen 6 permutaciones:</p>
+                                <p class="text-center">(3, 4, 5), (3, 5, 4), (4, 3, 5), (4, 5, 3), (5, 3, 4), (5, 4, 3)</p>
+                            </div>
+                        </div>
+                        <div class="sub-title-line mt-5">
+                            <h3>Permutación sin repetición: </h3>
+                        </div>
+                        <p>Los elementos de la combinación no se pueden, luego se calcula utilizando la fórmula enunciada anteriormente. </p>
+                        <div class="sub-title-line mt-5">
+                            <h3>Permutación sin repetición: </h3>
+                        </div>
+                        <p>Cuando se permite la repetición de r elementos contenidos en un conjunto n, para calcular el número de ordenaciones o permutaciones que se pueden hacer de r elementos, se utiliza la fórmula: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img61.png">
+                        <div class="row justify-content-center align-items-center my-5">
+                            <div class="col-10">
+                                <h3>Ejemplo: </h3>
+                                <p>Cuántas permutaciones con repeticiones de los elementos se pueden hacer del conjunto </p>
+                                <p>A = {3,4,5}</p>
+                                <p class="mb-0">n = 3 elementos </p>
+                                <p class="mb-0">r = 3 es decir se seleccionan los tres para las permutaciones </p>
+                                <p>nr = 33. </p>
+                                <p>Para combinar los números 3, 4 y 5 haciendo repeticiones de los tres números; se pueden hacer 33 permutaciones es decir 27. Por ejemplo, algunas de ellas podrían ser:</p>
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-8">
+                                        <table class="table table-bordered table-striped text-center">
+                                            <tbody>
+                                                <tr class="table3">
+                                                    <td>333</td>
+                                                    <td>334</td>
+                                                    <td>335</td>
+                                                    <td>343</td>
+                                                    <td>353</td>
+                                                </tr>
+                                            </tbody>
+                                            <tbody>
+                                                <tr class="table3">
+                                                    <td>444</td>
+                                                    <td>443</td>
+                                                    <td>445</td>
+                                                    <td>454</td>
+                                                    <td>434 </td>
+                                                </tr>
+                                            </tbody>
+                                            <tbody>
+                                                <tr class="table3">
+                                                    <td>555</td>
+                                                    <td>553</td>
+                                                    <td>554</td>
+                                                    <td>535</td>
+                                                    <td>545</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="text-center">Tabla 7. Permutaciones del conjunto A </p>
+                                    </div>
+                                </div>
+                                <p class="mt-5">Las anteriores combinaciones pueden corresponder a las combinaciones de una clave o caja fuerte. </p>
+                                <h3>Recuerda que … </h3>
+                                <p>En las permutaciones el orden de los elementos si importa, para conseguir combinaciones diferentes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white" id="aplicacion_de_las_permutaciones">
+                        <div class="sub-line">
+                            <h2>3.2 Aplicación de las permutaciones</h2>
+                        </div>
+                        <p>En una empresa se van a seleccionar tres cargos profesionales y se presentaron 12 personas en igualdad de condiciones académicas. El primer, segundo y tercer lugar en su orden ocuparán los cargos de jefe, coordinador y supervisor. Determinar de cuantas maneras posibles se puede hacer la selección.</p>
+                        <p>Datos iniciales</p>
+                        <p class="mb-0">n = 12; número de personas que se presentaron para ocupar los cargos.</p>
+                        <p>r = 3; personas que se deben seleccionar de las 12 para ocupar 1°,2°,3° cargo.</p>
+                        <p>Solución</p>
+                        <p>Las combinaciones que se puede hacer deben ser diferentes, luego es una permutación sin repetición, ya que las personas a ocupar los cargos deben ser 3 personas diferentes. </p>
+                        <p>Luego se aplica: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img62.png">
+                        <p>Entonces: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img63.png">
+                        <p>Luego hay 1320 formas de hacer la selección de los tres cargos. </p>
+                    </div>
+                    <div class="jumbotron bg-white" id="combinaciones">
+                        <div class="sub-line">
+                            <h2>3.3 Combinaciones</h2>
+                        </div>
+                        <p>Una combinación es una selección no ordenada de r elementos de un conjunto que contiene n elementos distintos. </p>
+                        <p>Se llama combinación r de n elementos y se denota por medio de:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img64.png">
+                        <p>Una permutación de objetos implica ordenamiento, pero una combinación no toma en cuenta el orden. </p>
+                    </div>
+                    <div class="jumbotron bg-white" id="aplicacion_de_las_combinaciones">
+                        <div class="sub-line">
+                            <h2>3.4 Aplicación de las combinaciones </h2>
+                        </div>
+                        <p>Se sortean dos computadoras iguales entre 10 personas. ¿De cuantas formas se puede escoger a los ganadores? </p>
+                        <p>Datos iniciales:</p>
+                        <p class="mb-0">n = 10 personas (elementos totales del conjunto de elementos).</p>
+                        <p>r = 2, número de computadoras a sortear, luego se deben formar grupos de dos en dos que corresponden a los grupos ganadores posibles.</p>
+                        <p>Las dos computadoras son iguales, y no importa el orden en que las personas salgan ganadoras, lo que importa es que salgan dos ganadores, es por ellos que es una combinación. </p>
+                        <p>Entonces: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img65.png">
+                        <p>Luego hay 45 formas de escoger los ganadores. </p>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-4">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>4. Aleatoriedad</h1>
+                    </div><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img66.png">
+                    <div class="jumbotron bg-white">
+                        <p>La aleatoriedad es el estudio de los fenómenos que dependen de la suerte o del azar, es decir, que son aleatorios y que están compuestos de eventos cuyos resultados no pueden predecirse hasta que ocurran. </p>
+                        <p>La aleatoriedad está dentro del ámbito de la estadística y utiliza los datos para realizar proyecciones y calcular tendencias de eventos o sucesos que están sujetos a la probabilidad, ya que estos no se pueden predecir. </p>
+                        <p>En esta sección vamos a estudiar la forma de organizar los datos para obtener conclusiones válidas de los eventos impredecibles.</p>
+                        <h3>Datos agrupados </h3>
+                        <p>Cuando los datos son cuantitativos (cuando se pueden medir para calcular algo) y se presenta una cantidad grande de valores diferentes se recomienda acomodarlos en grupos para obtener información de cada uno de ellos. A estos grupos se les llama clases o intervalos de clase. </p>
+                        <p>Los grupos deben formarse de igual tamaño (tamaño de clase, c) y el total de grupos o clases no deben ser menor que 5 ni mayor que 15.</p>
+                        <p>Una forma de calcular el tamaño de los grupos es utilizando: </p>
+                        <p>Clases =√n;</p>
+                        <p>donde n es el número de datos a ser agrupados.</p>
+                        <div class="row justify-content-center align-items-center my-5">
+                            <div class="col-10">
+                                <h3>Ejemplo: </h3>
+                                <p>Se tienen 40 alumnos en un curso del colegio y se deben agrupar por estaturas. Determinar cuántos grupos se pueden formar y establecer las estaturas.</p>
+                                <p>Solución</p>
+                                <p>N° de grupos (clase) =√40; n° de grupos (clase) = 6,3</p>
+                                <p>Se toma la parte entera del resultado sin el decimal; es decir se deben formar 6 grupos que se pueden distribuir así:</p>
+                                <p>Para distribuir los grupos se toma la estatura de cada alumno y se agrupan de acuerdo con estas mediciones, contando los alumnos que hay en cada clase o grupo de estatura:</p>
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-8">
+                                        <table class="table table-bordered table-striped text-center">
+                                            <tbody>
+                                                <tr class="table1">
+                                                    <td>Grupo (clases)</td>
+                                                    <td>Estatura</td>
+                                                    <td>Frecuencia</td>
+                                                </tr>
+                                            </tbody>
+                                            <tbody>
+                                                <tr class="table3">
+                                                    <td>1</td>
+                                                    <td>150-152</td>
+                                                    <td>6</td>
+                                                </tr>
+                                            </tbody>
+                                            <tbody>
+                                                <tr class="table3">
+                                                    <td>2</td>
+                                                    <td>153-155</td>
+                                                    <td>8</td>
+                                                </tr>
+                                            </tbody>
+                                            <tbody>
+                                                <tr class="table3">
+                                                    <td>3</td>
+                                                    <td>156-158</td>
+                                                    <td>8</td>
+                                                </tr>
+                                            </tbody>
+                                            <tbody>
+                                                <tr class="table3">
+                                                    <td>4</td>
+                                                    <td>159-161</td>
+                                                    <td>5</td>
+                                                </tr>
+                                            </tbody>
+                                            <tbody>
+                                                <tr class="table3">
+                                                    <td>5</td>
+                                                    <td>162-164</td>
+                                                    <td>6</td>
+                                                </tr>
+                                            </tbody>
+                                            <tbody>
+                                                <tr class="table3">
+                                                    <td>6</td>
+                                                    <td>165-167</td>
+                                                    <td>7 </td>
+                                                </tr>
+                                            </tbody>
+                                            <tbody>
+                                                <tr class="table3">
+                                                    <td colspan="2"> Total alumnos</td>
+                                                    <td>40</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="text-center">Tabla 8. Grupos de alumnos por estatura </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Obsérvese que en cada clase o grupo hay un determinado número de alumnos que se ha llamado Frecuencia, columna que al sumarse debe dar como resultado el número total de alumnos de la clase.</p>
+                        <p>La Frecuencia entonces mide las veces que se repite un evento dentro de una clase o grupo.</p>
+                    </div>
+                    <div class="jumbotron bg-white" id="medidas_de_tendencia_central">
+                        <div class="sub-line">
+                            <h2>4.1 Medidas de tendencia central </h2>
+                        </div>
+                        <p>Una de las características de la distribución o agrupación de los datos es su tendencia a acumularse hacia el centro de distribución o agrupación. Dicha característica se denomina tendencia central.</p>
+                        <p>Existen varias medidas que ayudan a identificar esta característica: </p>
+                        <p class="mb-0">a) Media aritmética (x), el valor medio. </p>
+                        <p class="mb-0">b) Mediana, el valor central. </p>
+                        <p class="mb-0">c) Moda, el valor más frecuente.</p>
+                        <p class="mb-0">d) Desviación media</p>
+                        <p>Veamos en que consiste cada una de ellas </p>
+                        <div class="sub-title-line">
+                            <h3>Media aritmética </h3>
+                        </div>
+                        <p>Es el valor que se obtiene al sumar todos los datos y dividir el resultado entre la cantidad de datos. Se expresa como x̄ o P (promedio)</p>
+                        <div class="row justify-content-center align-items-center my-5">
+                            <div class="col-10">
+                                <h3>Ejemplo: </h3>
+                                <p>Juan obtuvo al final del periodo las siguientes calificaciones en 5 materias diferentes: 8,5; 7,0; 9,6; 6,5; 7,8. Determinar cuál es su promedio del periodo.</p>
+                                <h3>Solución:</h3>
+                                <p>Lo que nos piden es hallar el promedio o media aritmética de las calificaciones de Juan, entonces: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img67.png"><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img68.png">
+                                <p>El promedio de Juan al final del periodo es 7,8. </p>
+                            </div>
+                        </div>
+                        <div class="sub-title-line">
+                            <h3>Mediana</h3>
+                        </div>
+                        <p>Es aquel valor que divide al conjunto de datos en dos partes iguales. Se expresa como Md. </p>
+                        <p>De acuerdo con Ibáñez (2018), para definir la mediana, se deben seguir los siguientes pasos:</p>
+                        <p>a) Lo primero que se requiere es ordenar los datos en forma ascendente o descendente, cualquiera de los dos criterios conduce al mismo resultado.</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img70.png">
+                        <p>b) Si el número de datos es impar, la mediana es el valor que se encuentra en medio en la posición: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img71.png">
+                        <p>c) Cuando el número de datos es par, existen dos valores medios y en tal caso la mediana es el promedio de estos dos valores:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img69.png">
+                        <p>Veamos los siguientes ejemplos basados en Ibáñez (2108):</p>
+                        <div class="row justify-content-center align-items-center my-5">
+                            <div class="col-10">
+                                <h3>Ejemplo 1: </h3>
+                                <p>Calcula la mediana de los siguientes datos: 5, 4, 3, 5, 6, 7, 1, 2, 9, 8, 6. </p>
+                                <h3>Solución:</h3>
+                                <p>Primero deben ordenarse los datos: 1, 2, 3, 4, 5, 5, 6, 6, 7, 8, 9 </p>
+                                <p>Tenemos 11 datos, como el número de datos es impar, la mediana es el valor que se encuentra en medio X<sub>n / 2</sub>; </p>
+                                <p>Luego 11/2 = 5,5, esto quiere decir que se cuentan 5 números y el que le sigue es la media: </p>
+                                <p class="text-center">1, 2, 3, 4, 5, <b>5</b>, 6, 6, 7, 8, 9</p>
+                                <p>Entonces se elige el que se encuentra a la mitad, en este caso es 5. </p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center my-5">
+                            <div class="col-10">
+                                <h3>Ejemplo 2: </h3>
+                                <p>Calcula la mediana de los siguientes datos: 4, 8, 6, 7, 9, 10, 4, 5. </p>
+                                <h3>Solución:</h3>
+                                <p>Primero deben ordenarse los datos:</p>
+                                <p class="text-center">4, 4, 5, <b>6, 7</b>, 8, 9, 10</p>
+                                <p>Tenemos 8 datos, como es una cantidad de datos par, el número de datos se toma del promedio de los dos que se encuentran al centro:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img72.png">
+                                <p>Entonces el valor de la mediana es 6,5.</p>
+                            </div>
+                        </div>
+                        <div class="sub-title-line">
+                            <h3>Moda</h3>
+                        </div>
+                        <p>Es la medida que se relaciona con el dato que se presenta con mayor frecuencia en un grupo o conjunto de datos. </p>
+                        <p>Puede existir más de una moda en un conjunto de datos y esta se expresa como Mo: </p>
+                        <ul>
+                            <li>Cuando un conjunto de datos tiene una sola moda se dice que este es unimodal.</li>
+                            <li>Cuando el conjunto de datos tiene dos modas se dice que este es bimodal.</li>
+                            <li>Cuando el conjunto de datos contiene más de dos datos repetidos, el que tenga mayor número de veces de repetición es la moda y se dice que el conjunto de datos es multimodal.</li>
+                            <li>Cuando todos los datos de un conjunto de datos tienen la misma frecuencia, (incluyendo una frecuencia igual a 1) se dice que el conjunto de datos es amodal.</li>
+                        </ul>
+                        <p>Veamos los siguientes ejemplos basados en Ibáñez (2018):</p>
+                        <div class="row justify-content-center align-items-center my-5">
+                            <div class="col-10">
+                                <h3>Ejemplo 1: </h3>
+                                <p>Determina la moda del siguiente conjunto de datos: 1, 3, 4, 6, 7, 2, 4, 8, 9, 1, 5, 4.</p>
+                                <h3>Solución:</h3>
+                                <p>La moda de este conjunto de datos es igual a 4, puesto que este dato se repite 3 veces y como es el único dato que se repite se considera unimodal.</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center my-5">
+                            <div class="col-10">
+                                <h3>Ejemplo 2: </h3>
+                                <Determina>la moda del siguiente conjunto de datos: 1, 2, 3, 4, 4, 5, 2, 1, 3, 4, 2, 3, 4, 6, 3. </Determina>
+                                <h3>Solución:</h3>
+                                <Las>modas de este conjunto de datos son 3 y 4 ya que ambas tienen la mayor frecuencia o se repiten 4 veces cada una, por lo tanto, el conjunto de datos es bimodal. </Las>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center my-5">
+                            <div class="col-10">
+                                <h3>Ejemplo 2: </h3>
+                                <Determina>la moda del siguiente conjunto de datos: 1, 2, 3, 4, 5, 6, 7, 8, 9.</Determina>
+                                <h3>Solución: </h3>
+                                <El>conjunto de datos no contiene ningún dato repetido, por lo tanto, se considera que el conjunto de datos es amodal.</El>
+                            </div>
+                        </div>
+                        <div class="sub-title-line">
+                            <h3>Desviación Media </h3>
+                        </div>
+                        <p>Llamada también desviación promedio de la media aritmética.</p>
+                        <p>La desviación media de un conjunto de datos es la medida de lo que se desvía cada dato del conjunto respecto de la media aritmética y se expresa como D.M.</p>
+                        <p>Antes de calcular la desviación media de un conjunto de datos, se debe calcular entonces la media aritmética de los datos.</p>
+                        <p>La fórmula de la desviación media es:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img73.png"><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img74.png">
+                        <p>Entiéndase por valor absoluto de un dato, al valor del dato con signo positivo o de valor cero. </p>
+                        <div class="row justify-content-center align-items-center my-5">
+                            <div class="col-10">
+                                <h3>Ejemplo: </h3>
+                                <p>Calcular la desviación media de los siguientes datos: 2,4,6,8</p>
+                                <h3>Solución:</h3>
+                                <p>Se calcula la media aritmética del conjunto de los datos, sabiendo que tiene 4 elementos, es decir n = 4</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img75.png"><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img76.png"><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img77.png">
+                                <p>Por tanto, los datos del conjunto se desvían con una medida de 2, respecto de la media aritmética. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white" id="aplicacion_medidas_de_tendencia_central">
+                        <div class="sub-line">
+                            <h2> 4.2 Aplicación de las medidas de tendencia central</h2>
+                        </div>
+                        <h1>Los ejemplos que encuentras en el siguiente video explican los conceptos de media, mediana y moda. </h1>
+                    </div>
+                    <div class="container contenedor"> <img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img21.png">
+                        <p class="center">Te invitamos a consultar otros problemas de práctica en con Ibáñez, P. (2018). Matemáticas I. pág. 114, en el siguiente enlace: <a href="http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=8213&amp;pg=127" target="_blank">http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=8213&pg=127 </a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-5">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>5. Probabilidad clásica</h1>
+                    </div><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img79.png">
+                    <div class="jumbotron bg-white">
+                        <p>Se define como probabilidad a la posibilidad de que ocurra un determinado evento o suceso.</p>
+                        <p>Es necesario recorrer algunos conceptos para aplicar las probabilidades al contexto real. Veamos:</p>
+                        <p><b>Experimento aleatorio</b>: es la reproducción de un fenómeno cuyo resultado depende del azar. </p>
+                        <h3>Ejemplo:</h3>
+                        <ul>
+                            <li>El lanzamiento de un dado.</li>
+                            <li>El lanzamiento de una moneda.</li>
+                        </ul>
+                        <p><b>Evento o suceso</b>: conjunto de uno o más resultados del experimento aleatorio. </p>
+                        <h3>Ejemplo: </h3>
+                        <p>si A = {obtener el número 4 al lanzar un dado}, entonces el evento es A = {4} </p>
+                        <p>si B = {obtener un número mayor que 3, al lanzar un dado}, el evento es B = {4,5,6}</p>
+                        <p><b>Espacio muestral</b>: es el conjunto de todos los resultados posibles de un experimento aleatorio.</p>
+                        <h3>Ejemplo: </h3>
+                        <ul>
+                            <li>Si se lanza un dado el espacio muestral está compuesto por los siguientes elementos: S = {1,2,3,4,5,6}</li>
+                            <li>Si se lanza una moneda el espacio muestral está compuesto por los siguientes elementos: S = {cara, sello}</li>
+                        </ul>
+                        <p>La <b>probabilidad</b>, como se indicó anteriormente es la posibilidad de que ocurra un evento A. Dado el evento A, la probabilidad de que A ocurra, se denota como P(A) y se calcula mediante la fórmula:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img80.png">
+                        <p>Criterios claves:</p>
+                        <ul>
+                            <li>La probabilidad de A; P(A) es un valor entre 0 y 1, es decir 0 ≤ P (A)≤1.</li>
+                            <li>La probabilidad de que ocurra un evento imposible es cero. Por ejemplo, la probabilidad de obtener el número 7 al lanzar un dado, numerado del 1 al 6 es cero, es decir P(X) = 0.</li>
+                            <li>La probabilidad de que ocurra un evento seguro es 1. Por ejemplo, la probabilidad de obtener un número < 7 al lanzar un dado, numerado del 1 al 6 es 1, es decir P(X)=1.</li>
+                        </ul>
+                        <h3 class="mt-3">Ejemplo:</h3>
+                        <p>Se lanza un dado n veces, cual es la probabilidad de que no salga el número 2 en los n lanzamientos.</p>
+                        <h3>Solución:</h3><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img81.png">
+                        <p>Lo primero que hacemos es hallar el número de resultados posibles y eso es:</p>
+                        <p>Cada vez que se lanza el dado hay 6 resultados posibles: </p>
+                        <p>1° lanzamiento = 6</p>
+                        <p>2° lanzamiento = 6</p>
+                        <p>3° lanzamiento = 6</p>
+                        <p>4° lanzamiento = 6</p>
+                        <p>n° lanzamiento = 6, luego el número de resultados posibles es 6<sup>n</sup>.</p>
+                        <p>El paso siguiente es calcular los casos favorables al evento, es decir aquellos en que al lanzar los dados “n” veces no salga el número 2. </p>
+                        <p>1° lanzamiento = 5</p>
+                        <p>2° lanzamiento = 5</p>
+                        <p>3° lanzamiento = 5</p>
+                        <p>4° lanzamiento = 5</p>
+                        <p>n° lanzamiento = 5, en los lanzamientos se debe eliminar la posibilidad del número 2, por ello se coloca el 5 que equivale a los casos favorables. Luego el número de resultados favorables es 5<sup>n</sup>.</p>
+                        <p>Ahora reemplazamos en la fórmula: P (no salga 2) = 5<sup>n</sup> / 6<sup>n</sup> o P (no salga 2) = (5/6) <sup>n</sup></p>
+                    </div>
+                    <div class="jumbotron bg-white" id="regla_de_la_adicion_en_probabilidades">
+                        <div class="sub-line">
+                            <h2>5.1 Regla de la adición en probabilidades</h2>
+                        </div>
+                        <p>Dos eventos son excluyentes si no pueden suceder simultáneamente, por ejemplo, el resultado de lanzar una moneda en el que puede salir cara o sello es un evento excluyente. </p>
+                        <p>Si dos eventos A y B son mutuamente excluyentes, la regla especial de la adición establece que la probabilidad de que ocurra uno u otro es igual a la suma de sus probabilidades. </p>
+                        <p>Si los eventos no son mutuamente excluyentes, la probabilidad de que ocurra uno u otro es igual a la suma de sus probabilidades menos la probabilidad de que sucedan al mismo tiempo.</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img82.png">
+                        <p><b>Ejemplo:</b> Basado en Ibáñez (2018):</p>
+                        <p>Un colegio seleccionó una muestra de 200 estudiantes que visitaron un museo o un teatro durante el año. Las encuestas revelaron que 120 estudiantes fueron a un museo, 100 a un teatro y 60 a ambos. ¿Cuál es la probabilidad de que un estudiante haya ido a un museo o al teatro?</p>
+                        <h3>Solución:</h3>
+                        <p><b>A =</b> estudiantes que fueron al museo</p>
+                        <p><b>B =</b> estudiantes que fueron al teatro</p>
+                        <p>Hallamos la probabilidad de cada uno:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img83.png"><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img84.png">
+                        <p>Si se suman las dos probabilidades el resultado es 1,1 y de acuerdo con los criterios claves dados, la probabilidad de un evento debe ser ≤1. La explicación es que hay estudiantes que fueron al museo y al teatro, por tanto, hay que excluir a estos:</p>
+                        <p>Hallamos la probabilidad de los que fueron al mueso y al teatro:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img85.png"><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img86.png">
+                        <p>Entonces: </p>
+                        <p class="pl-5">P (A o B) = P(A) + P(B) – P (A y B)</p>
+                        <p class="pl-5">P (A o B) = 0,6 + 0,5 – 0,3</p>
+                        <p class="pl-5">P (A o B) = 0,8</p>
+                    </div>
+                    <div class="jumbotron bg-white" id="regla_de_la_multiplicacion_en_probabilidades">
+                        <div class="sub-line">
+                            <h2>5.2 Regla de la multiplicación en probabilidades</h2>
+                        </div>
+                        <p>Aquí se considera la probabilidad de que dos eventos ocurran simultáneamente, es decir, ocurre uno y otro.</p>
+                        <p>Dos eventos A y B son independientes, cuando el hecho de que ocurra uno no altera la probabilidad de que ocurra el otro. </p>
+                        <p>Dos eventos A y B son dependientes, si la ocurrencia de uno de ellos no afecta la ocurrencia del otro y la probabilidad de que ocurran es:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img87.png">
+                        <h3>Ejemplo: </h3>
+                        <p>En un aula de clase la probabilidad que un estudiante seleccionado al azar sea bilingüe es de 0,2, mientras que la probabilidad de que el estudiante sea deportista es 0,8. Cuál es la probabilidad de que ocurran los dos eventos.</p>
+                        <p><b>Evento A:</b> el estudiante sea bilingüe P(A) = 0,2</p>
+                        <p><b>Evento B:</b> el estudiante sea deportista P(B) = 0,8</p>
+                        <p>Los dos eventos anteriores son independientes, luego multiplicamos para hallar la probabilidad de ambos:</p>
+                        <p class="ml-5">P (A y B) = P(A)*P(B)</p>
+                        <p class="ml-5">P (A y B) = (0,2) *(0,8)</p>
+                        <p class="ml-5">P (A y B) = 0,16</p>
+                        <p>Dos eventos A y B son dependientes, si la ocurrencia de uno de ellos afecta la ocurrencia del otro y la probabilidad de que ocurran es:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img88.png">
+                        <p>La P(B|A) se lee la probabilidad de B dado que ha ocurrido A. </p>
+                        <h3>Ejemplo:</h3>
+                        <p>Una caja tiene 2 balones azules y 3 rojos. Si se sacan dos balones al azar sin reposición, determinar la probabilidad que ambos sean azules.</p>
+                        <p>Dado que los balones se extraerán de la misma caja y no se devolverán, entonces se trata de eventos dependientes:</p>
+                        <p><b>Evento A:</b> extraer un balón azul en la primera extracción</p>
+                        <p><b>Evento B:</b> extraer un balón azul en la segunda extracción</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img89.png"><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img90.png"><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img91.png"><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img92.png"><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img93.png">
+                    </div>
+                    <div class="jumbotron bg-white" id="aplicacion_de_las_Probabilidades">
+                        <div class="sub-line">
+                            <h2>5.3 Aplicación de las Probabilidades</h2>
+                        </div>
+                        <h1>Observa el video y comprende mejor como realizar operaciones con probabilidades aplicadas a un problema: </h1>
+                    </div>
+                    <div class="container contenedor"> <img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img21.png">
+                        <p class="center">Para practicar los temas aprendidos, resuelve los problemas de la página 130 – 135 de Ibáñez (2018), siguiendo el enlace: <a href="http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=8213&amp;pg=144" target="_blank">http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=8213&pg=144 </a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-6">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>6. Geometría plana</h1>
+                    </div><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img94.png">
+                    <div class="jumbotron bg-white">
+                        <p>La geometría es la rama de la matemática orientada al análisis de las figuras en el espacio o en un plano. </p>
+                        <p><b>Geometría plana: </b>es la rama de la geometría que estudia las propiedades de las figuras en una superficie plana es decir en dos dimensiones y sus puntos se pueden ubicar en el plano cartesiano. </p>
+                        <p><b>Plano cartesiano:</b> representación gráfica con dos ejes de coordenadas, el eje de la ordenadas o eje Y, el eje de las abscisas o eje X. Observar figura:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img95.png">
+                        <p class="text-center">Gráfica 14. Plano cartesiano </p>
+                        <p>La gráfica representa entonces un plano en dos dimensiones con un eje vertical o eje Y un eje horizontal o eje X, en los cuales se pueden representar a través de la unión de puntos (x, y) las figuras planas que se observan a continuación: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img96.png">
+                        <p class="text-center">Gráfica 15. Figuras geométricas planas </p>
+                    </div>
+                    <div class="jumbotron bg-white" id="area_de_las_figuras_planas">
+                        <div class="sub-line">
+                            <h2>6.1 Área de las figuras planas</h2>
+                        </div>
+                        <p>El área es una medida que especifica el tamaño de una extensión o superficie determinada.</p>
+                        <p>El área de figura plana es entonces el tamaño de la extensión dentro de la figura, se expresa en unidades de superficie. </p>
+                        <p>Para determinar un área se requiere que haya de un espacio que esté delimitado para saber en dónde calcularla. Un espacio compuesto por líneas rectas (lados) o curvas y por ángulos, entonces estudiaremos estos conceptos.</p>
+                        <p><b>Línea recta:</b> es la unión de dos puntos en forma de segmento en un plano cartesiano. Ver figura:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img97.png">
+                        <p class="text-center">Gráfica 16. Gráfica de la línea recta</p>
+                        <p>La figura muestra el segmento AB, que se formó uniendo los puntos (x, y) del plano cartesiano: (2,1) y (8,4).</p>
+                        <p><b>Línea curva:</b> es la unión de dos puntos para forma un arco como se muestra a continuación:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img98.png">
+                        <p class="text-center">Gráfica 17. Gráfica de la línea curva </p>
+                        <p>La figura muestra la unión de los (x, y) del plano cartesiano (2,1) y (8,4), a través de una curva.</p>
+                        <p><b>Vértice:</b> es el punto en común en que se unen dos rectas;</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img99.png">
+                        <p class="text-center">Gráfica 18. Vértice de dos líneas </p>
+                        <p><b>Ángulo:</b> es la porción del plano cartesiano comprendida entre dos rectas que se unen en un punto común o vértice. El valor del ángulo se mide en grados y las rectas se llaman lados del ángulo: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img100.png">
+                        <p class="text-center">Gráfica 19. Ángulo entre dos líneas </p>
+                        <p><b>Lados:</b> son cada uno de los segmentos que limitan una figura plana; </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img101.png">
+                        <p class="text-center">Gráfica 20. Lados de un polígono </p>
+                        <p>Área de los polígonos</p>
+                        <p>Las figuras planas son polígonos es decir figuras geométricas delimitadas por una sucesión de segmentos, las cuales poseen medidas mensurables como los lados, ángulos, ancho y largo. Las figuras planas que se observaron anteriormente son polígonos. </p>
+                        <p>Conceptos básicos:</p>
+                        <ul>
+                            <li>Base de un polígono: lado o lados sobre el cual descansa la figura.</li>
+                            <li>Altura de un polígono: es la perpendicular trazada desde la base hasta el vértice opuesto a ella (base).</li>
+                        </ul>
+                        <p>Área de un triángulo: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img102.png">
+                        <p class="text-center">Gráfica 21. Área de un triangulo</p>
+                        <p>Donde:</p>
+                        <p>b = base del triangulop <b></p>
+                        <p>h = alt</b>ura del triangulo</p>
+                    </div>
+                    <div class="jumbotron bg-white" id="teorema_de_pitagoras">
+                        <div class="sub-line">
+                            <h2>6.2 Teorema de Pitágoras</h2>
+                        </div>
+                        <p>Es un teorema que nos permite relacionar los tres lados de un triángulo y es muy útil cuando conocemos dos lados y necesitamos hallar el tercero. Este teorema se aplica a los triángulos rectángulos solamente. La figura a continuación muestra un triángulo rectángulo:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img103.png">
+                        <p class="text-center">Gráfica 22. Teorema de Pitágoras </p>
+                        <p>Un triángulo es rectángulo cuando tiene un ángulo recto de 90°, un lado de longitud mayor llamado hipotenusa <b>(c)</b> y dos lados con longitudes menores llamados catetos; <b>(a)</b> y <b>(b)</b>. </p>
+                        <p>Para hallar la hipotenusa cuando es desconocida se aplica el teorema de Pitágoras cuya fórmula es:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img104.png">
+                        <div class="row justify-content-center align-items-center my-5">
+                            <div class="col-10">
+                                <h3>Ejemplo:</h3>
+                                <p>Hallar la hipotenusa del triángulo rectángulo de lados a = 3cm, b= 4cm</p>
+                                <p>Si h = valor de la hipotenusa, entonces aplicando el teorema de Pitágoras:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img105.png">
+                                <p>la hipotenusa o lado de longitud más grande es igual a 25. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white" id="teorema_de_thales">
+                        <div class="sub-line">
+                            <h2>6.3 Teorema de Thales</h2>
+                        </div>
+                        <p><b>Triángulos semejantes:</b> dos triángulos son semejantes cuando tienen igual forma, pero no necesariamente tienen el mismo tamaño. Los triángulos tienen un ángulo común igual y un lado paralelo o proporcional.</p>
+                        <h3>Ejemplo: </h3><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img106.png">
+                        <p class="text-center">Gráfica 23. Teorema de Thales </p>
+                        <p>Estos triángulos tienen igual forma, pero uno es más pequeño que el otro, los ángulos señalados en rojo son de igual valor y tienen lados proporcionales o paralelos entre sí. El triángulo pequeño se puede meter dentro del grande y aunque se conocen las dimensiones de sus lados, no se conocen todas las dimensiones de los lados del triángulo más grande, las cuales se pueden averiguar aplicando el Teorema de Thales.</p>
+                        <p>Fórmula del Teorema de <b>Thales:</b> </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img107.png">
+                        <p>En el caso del ejemplo b´ y c´ no se conocen, entonces aplicando la fórmula se tiene que: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img108.png">
+                        <p>se reemplazan los valores de los lados de los triángulos y se tiene que: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img109.png">
+                        <p>Se despeja la variable b´:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img110.png"><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img111.png">
+                        <p>Ahora calculamos el valor de c´, aplicando el teorema:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img112.png"><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img113.png"><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img114.png"><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img115.png">
+                        <p>De acuerdo con las dimensiones del triángulo más grande:</p>
+                        <ul>
+                            <li>a´ = 52m, b´ = 48m; c´ = 20m </li>
+                        </ul>
+                        <p>y las dimensiones del triángulo más pequeño: </p>
+                        <ul>
+                            <li>a = 26; b = 24m; c = 10m</li>
+                        </ul>
+                        <p>El triángulo grande es el doble del pequeño, sus lados paralelos son proporcionales y sus ángulos son iguales, por ello se pudo aplicar el teorema de Thales.</p>
+                        <p class="mt-5"><b>Área de una circunferencia:</b> la circunferencia es un polígono de forma circular, que tiene un radio R el cual es el segmento que une el centro de la circunferencia con cualquier punto de ella. </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img116.png">
+                        <p class="text-center">Gráfica 24. Área de la circunferencia </p>
+                        <p>La fórmula para calcular su área es:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img117.png">
+                        <p>Donde:</p>
+                        <p class="mb-0">ᴨ = es una constante llamada PI, con un valor de 3,14</p>
+                        <p class="mb-0">r = radio de la circunferencia.</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img118.png">
+                        <p>A continuación, se relacionan las fórmulas para calcular el área de las figuras geométricas planas:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img119.png">
+                        <p class="text-center">Gráfica 25. Fórmulas para calcular Áreas de figuras planas </p>
+                    </div>
+                    <div class="jumbotron bg-white" id="aplicacion_del_area_de_las_figuras_geometricas">
+                        <div class="sub-line">
+                            <h2>6.4 Aplicación del área de las figuras geométricas</h2>
+                        </div>
+                        <p>Una firma constructora va a construir en un terreno como se muestra en la figura: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img120.png">
+                        <p class="text-center">Gráfica 26. Gráfica del terreno </p>
+                        <p>La parte sombreada se utilizará para jardín y la otra para levantar un edificio de 5 pisos. Determinar el área que se utilizará para el jardín y el área que utilizará para los apartamentos.</p>
+                        <h3>Solución</h3>
+                        <p>El área sombreada corresponde al triangulo que se muestra a continuación:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img121.png">
+                        <p class="text-center">Gráfica 27. Gráfica del área triangular del terreno </p>
+                        <p>Se conocen las dimensiones de los lados que corresponden a la base y la altura del triángulo, luego se aplica la fórmula: </p>
+                        <p class="mb-0">b = 2 m; base del triángulo</p>
+                        <p>h = 60 m; altura del triángulo </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img122.png">
+                        <p>Luego el área del jardín será de 60 m<sup>2</sup></p>
+                        <p>El área para construir los apartamentos corresponde a un rectángulo:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img123.png">
+                        <p class="text-center">Gráfica 28. Gráfica del área rectangular del terreno</p>
+                        <p>El área de un rectángulo es:</p>
+                        <p>Área = b x h (base x altura)</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img124.png">
+                        <p>Luego el área para construir los apartamentos será de 2400 m<sup>2</sup> </p>
+                    </div>
+                    <div class="jumbotron bg-white" id="perimetro_de_las_figuras_planas">
+                        <div class="sub-line">
+                            <h2>6.5 Perímetro de las figuras planas</h2>
+                        </div>
+                        <p>El perímetro de una figura plana corresponde a la longitud total del contorno de dicha figura. </p>
+                        <div class="row justify-content-center align-items-center my-5">
+                            <div class="col-10">
+                                <h3>Ejemplo 1:</h3>
+                                <p>hallar el perímetro de un triángulo cuyos lados son L<sub>1</sub>, L<sub>2</sub>, L<sub>3</sub> </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img125.png">
+                                <p class="text-center">Gráfica 29. Triángulo de lados desiguales </p>
+                                <p>El perímetro P del triángulo anterior es:</p>
+                                <p>P = L<sub>1</sub>+ L<sub>2</sub> + L<sub>3</sub></p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center my-5">
+                            <div class="col-10">
+                                <h3>Ejemplo 2:</h3>
+                                <p>hallar el perímetro de una circunferencia cuyo radio es r</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img126.png">
+                                <p class="text-center">Gráfica 30. Circunferencia de radio r </p>
+                                <p>Para hallar el perímetro o longitud de la circunferencia se aplica la fórmula:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img127.png">
+                                <p>Donde:</p>
+                                <p class="mb-0">π = 3,14; constante llamada PI</p>
+                                <p>r = radio de la circunferencia</p>
+                                <p>El diámetro d de una circunferencia es el segmento que pasa por el centro y une dos puntos de ellas, luego el diámetro es 2 veces su radio, es decir d = 2r</p>
+                                <p>Entonces la longitud de una circunferencia es 3,14 veces la medida de su diámetro.</p>
+                                <p>Se puede decir que una rueda al dar una vuelta completa describe una trayectoria cuya longitud es el perímetro de la circunferencia de la rueda.</p>
+                            </div>
+                        </div>
+                        <p>A continuación, se relacionan las fórmulas para calcular el perímetro de figuras geométricas:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img128.png">
+                        <p class="text-center">Gráfica 31. Fórmulas para calcular el perímetro de figuras planas </p>
+                    </div>
+                    <div class="jumbotron bg-white" id="aplicacion_perimetro_de_las_figuras_planas">
+                        <div class="sub-line">
+                            <h2>6.6 Aplicación del perímetro de figuras planas</h2>
+                        </div>
+                        <p>Un estudiante recorre de la casa al colegio 2000 m. esa también es la distancia que recorre de la biblioteca al centro comercial. El viernes va del colegio a la biblioteca que le queda a 500m. Al salir de la biblioteca va al centro comercial y luego irá a casa. Calcular el recorrido que hace el estudiante el viernes si la disposición de los edificios es como se muestra en la figura: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img129.png">
+                        <p class="text-center">Gráfica 32. Recorrido del estudiante </p>
+                        <p>Solución</p>
+                        <p>Observe que la figura es un cuadrilátero y de acuerdo con las distancias recorridas las medidas son: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img130.png">
+                        <p class="text-center">Gráfica 33. Gráfica del polígono del recorrido del estudiante</p>
+                        <p>Para hallar el perímetro de un cuadrilátero se utiliza la fórmula:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img131.png">
+                        <p>Donde:</p>
+                        <p class="mb-0">b = 2000m es la base</p>
+                        <p>h = 500m es la altura</p>
+                        <p>la figura tiene lados iguales de dos en dos; por eso la base b se suma dos veces y la altura h también, luego:</p>
+                        <p class="text-center">P = 2000m + 2000m + 500m + 500m</p>
+                        <p class="text-center">P = 5000m</p>
+                        <p>Entonces el recorrido que el estudiante hace el viernes es de 5000m</p>
+                    </div>
+                    <div class="jumbotron bg-white" id="rotacion_de_figuras_en_un_plano">
+                        <div class="sub-line">
+                            <h2>6.7 Rotación de figuras en un plano</h2>
+                        </div>
+                        <p>La rotación es un movimiento definido en cualquier espacio. La rotación de una figura en un plano es hacer un giro alrededor de un punto fijo dentro del plano cartesiano, en sentido contrario a las manecillas del reloj.</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img132.png">
+                        <p class="text-center">Gráfica 34. Rotación de una figura plana</p>
+                        <p>El triángulo que se nuestra en plano cartesiano puede rotar en diferentes ángulos (90°, 180°, 360°). </p>
+                    </div>
+                    <div class="jumbotron bg-white" id="aplicacion_rotacion_de_figuras_en_un_plano">
+                        <div class="sub-line">
+                            <h2>6.8 Aplicación de rotación de figuras en un plano</h2>
+                        </div>
+                        <h1>video Veamos un ejemplo de rotar una figura en un plano cartesiano:</h1>
+                    </div>
+                    <div class="jumbotron bg-white" id="traslacion_de_figuras_en_un_plano">
+                        <div class="sub-line">
+                            <h2>6.9 Traslación de figuras en un plano</h2>
+                        </div>
+                        <p>La traslación de una figura es un movimiento directo dentro del plano cartesiano sin cambiar de orientación, manteniendo su forma y tamaño y realizando un desplazamiento en cualquier dirección: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img133.png">
+                        <p class="text-center">Gráfica 35. Traslación de una figura plana</p>
+                        <p>En la figura anterior el triángulo se desplaza del punto A al punto B, realizando un deslizamiento sobre la línea recta, conservando todas sus propiedades de forma y longitud.</p>
+                    </div>
+                    <div class="jumbotron bg-white" id="aplicacion_traslacion_de_figuras_en_un_plano">
+                        <div class="sub-line">
+                            <h2>6.10 Aplicación de traslación de las figuras en un plano</h2>
+                        </div>
+                        <h1>En el video has podido analizar que la traslación la figura sufre un desplazamiento en determinadas unidades que deben especificarse. </h1>
+                    </div>
+                    <div class="jumbotron bg-white" id="volumen">
+                        <div class="sub-line">
+                            <h2>6.11 Volumen</h2>
+                        </div>
+                        <p>El volumen es una magnitud derivada de la longitud que mide el largo x ancho x alto de un objeto en cualquier espacio:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img134.png">
+                        <p class="text-center">Gráfica 36. Volumen de un cubo</p>
+                        <p>En el sistema métrico decimal las unidades más utilizadas para medir el volumen se relacionan a continuación:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img135.png">
+                        <p class="text-center">Tabla 9. Unidades cúbicas del sistema métrico decimal</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img136.png">
+                        <p class="text-center">Gráfica 37. Volumen de figuras en tres dimensiones</p>
+                        <p>Las anteriores figuras corresponden a una esfera, un cubo y un cilindro con sus respectivas medidas para el cálculo del volumen.</p>
+                    </div>
+                    <div class="jumbotron bg-white" id="aplicacion_volumen">
+                        <div class="sub-line">
+                            <h2>6.12 Aplicación de volumen</h2>
+                        </div>
+                        <p>Se necesita almacenar unas cajas en una bodega cuyas dimensiones son 6m de largo, 4 m de ancho y 3 metros de alto. Determinar cuántas cajas se pueden almacenar si la dimensión de cada caja es 10cm de largo, 6 cm de ancho y 4 cm de alto.</p>
+                        <p>Solución</p>
+                        <p>Se deben unificar las medidas, puesto que las cajas pequeñas tienen una longitud en centímetros:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img137.png">
+                        <p class="text-center">Gráfica 38. Aplicación de volumen de un cubo</p>
+                        <p>Tenga en cuenta que 1 m = 100 cm; </p>
+                        <p>Se convierten a metros, las dimensiones de las cajas pequeñas que están en centímetros</p>
+                        <ul>
+                            <li>10cm de largo equivalen a 0,1 m</li>
+                            <li>6 cm de ancho equivalen a 0,06 m</li>
+                            <li>4 cm de alto equivalen a 0,04 m</li>
+                        </ul>
+                        <p>Se calcula en volumen de las cajas pequeñas, que tiene forma de cubo, luego la fórmula es: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img138.png">
+                        <p>Se calcula en volumen de la bodega que también tiene forma de cubo, luego se utiliza la misma fórmula: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img139.png">
+                        <p>La cantidad de cajas (C) que caben en la bodega se calcula dividiendo el volumen de la bodega entre el volumen de una caja:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img140.png">
+                        <p>Luego en la bodega caben 250000 cajas.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="glosario">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Glosario</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <p><strong class="mr-2">Aleatoriedad::</strong>es el estudio de los fenómenos aleatorios o de azar que está compuesto de eventos cuyos resultados no pueden predecirse hasta que ocurran. </p>
+                        <p><strong class="mr-2">Área:</strong>es una medida que especifica el tamaño de una extensión o superficie determinada.</p>
+                        <p> <strong class="mr-2">Combinatoria:</strong>son todas las posibles agrupaciones que pueden hacerse con m elementos de un conjunto.</p>
+                        <p><strong class="mr-2">Combinación:</strong>es una selección no ordenada de r elementos de un conjunto que contiene n elementos distintos.</p>
+                        <p> <strong class="mr-2">Desviación media:</strong>es la medida de lo que se desvía cada dato del conjunto respecto de la media aritmética.</p>
+                        <p> <strong class="mr-2">Ecuación:</strong>es una igualdad matemática entre dos expresiones que están separadas por el signo igual, en las que aparecen datos conocidos (números, coeficientes o constantes) y datos desconocidos o incógnitas.</p>
+                        <p> <strong class="mr-2">Función:</strong>es la relación que existe entre dos conjuntos, de manera que a los elementos de x les corresponde a lo más un elemento de y.</p>
+                        <p> <strong class="mr-2">Media aritmética:</strong>es el valor que se obtiene al sumar todos los datos y dividir el resultado entre la cantidad de datos.</p>
+                        <p> <strong class="mr-2">Mediana:</strong>es aquel valor que divide al conjunto de datos en dos partes iguales.</p>
+                        <p> <strong class="mr-2">Moda:</strong>es la medida que se relaciona con el dato que se presenta con mayor frecuencia en un grupo o conjunto de datos. </p>
+                        <p> <strong class="mr-2">Permutación:</strong>es la variación del orden de los elementos de un conjunto.</p>
+                        <p> <strong class="mr-2">Perímetro:</strong>es la longitud total del contorno de una figura.</p>
+                        <p> <strong class="mr-2">Probabilidad:</strong>es la posibilidad de que ocurra un determinado evento o suceso.</p>
+                        <p> <strong class="mr-2">Relación:</strong>es la correspondencia de un primer conjunto llamado Dominio o Partida, con un segundo conjunto llamado Recorrido, Rango o Llegada. </p>
+                        <p> <strong class="mr-2">Rotación:</strong>es hacer un giro alrededor de un punto fijo dentro del plano cartesiano. </p>
+                        <p> <strong class="mr-2">Traslación:</strong>es un movimiento directo dentro del plano cartesiano sin cambiar de orientación, manteniendo su forma y tamaño y realizando un desplazamiento en cualquier dirección.</p>
+                        <p> <strong class="mr-2">Volumen:</strong>es una magnitud derivada de la longitud que mide el largo x ancho x alto de un objeto en cualquier espacio. </p>
+                    </div>
+                </div>
+            </div>
+            <div id="anexos">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Material complementario</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <table class="table table-bordered table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th class="text-center">Nombre del documento o material.</th>
+                                    <th class="text-center">Tipo de material. </th>
+                                    <th class="text-center">Enlace del Recurso.</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Matemóvil.com (2018, 29 de agosto). </strong></td>
+                                    <td>Media, Mediana y Moda. [video]. YouTube.</td>
+                                    <td> <a href="https://www.youtube.com/watch?v=jiceVfALmV0" target="_blank"><span class="fa fa-external-link mr-3" aria-hidden="true"></span>Ver video</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Matemáticas profe Alex.com (2017, 12 de junio)</strong></td>
+                                    <td>Desviación media. [video]. YouTube.</td>
+                                    <td> <a href="https://www.youtube.com/watch?v=YBEKojF4E94" target="_blank"><span class="fa fa-external-link mr-3" aria-hidden="true"></span>Ver video</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Matemóvil.com (2019, 14 de julio)</strong></td>
+                                    <td>Teorema de Probabilidad Total. [video]. YouTube.</td>
+                                    <td> <a href="https://www.youtube.com/watch?v=MJxbMAko6rU" target="_blank"><span class="fa fa-external-link mr-3" aria-hidden="true"></span>Ver video</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Yo estudio.com (2013, 5 de agosto)</strong></td>
+                                    <td>Matemática – Ejercicio de rotación. [video]. YouTube.</td>
+                                    <td> <a href="https://www.youtube.com/watch?v=-rwW9GKBMEg&amp;feature=youtu.be" target="_blank"><span class="fa fa-external-link mr-3" aria-hidden="true"></span>Ver video </a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Matemáticas profe Alex.com (2016, 6 de noviembre)</strong></td>
+                                    <td>Traslación en el plano cartesiano. [video]. YouTube.</td>
+                                    <td> <a href="https://www.youtube.com/watch?v=C3Ydl25rESg&amp;feature=youtu.be" target="_blank"><span class="fa fa-external-link mr-3" aria-hidden="true"></span>Ver video </a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="referencias">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Referencias bibliográficas</h1>
+                    </div>
+                    <div class="jumbotron bg-white referencias">
+                        <p>Aguilar, A. (2015). Matemáticas simplificadas. (4a. ed.). Pearson Educación. <a class="ml-2" href="http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=4829" target="_blank">http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=4829</a></p>
+                        <hr>
+                        <p>Ibáñez, P. (2018). Matemáticas I. Cengage. <a class="ml-2" href="http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=8213" target="_blank">http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=8213</a></p>
+                        <hr>
+                        <p>Constitución Política de Colombia. (1991). (Capítulo 2: De la Función pública Art. 122, 123, 125,130) República de Colombia.<a class="ml-2" href=" " target="_blank"> </a></p>
+                        <hr>
+                        <p>Veerarajan, T. (2008). Matemáticas discretas. McGraw-Hill Interamericana.<a class="ml-2" href="http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=3116" target="_blank">http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=3116</a></p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer" id="Creditos">
+            <div class="container">
+                <h1>Créditos </h1>
+                <div class="brand-line-primary"></div>
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <h3 class="footer-subtitulo mb-4">ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES </h3>
+                        <p class="footer-texto mb-2"><strong>Ingry Dayanna Bonilla Monzón</strong><br /> <span class="text-small">Líder del equipo</span></p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 col-md-5">
+                        <h4 class="footer-subtitulo-2 mt-0">
+                            <div class="fa fa-caret-right mr-2"></div>Contenido Instruccional
+                        </h4>
+                        <p class="footer-texto mb-2"><strong>Gloria Matilde Lee Mejía </strong><br /> <span class="text-small">Responsable del equipo</span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Comercio y Servicios</span><br><span class="text-small">Regional Tolima</span></p>
+                        <p class="footer-texto mb-2"><strong>Rafael Nelftalí Lizcano Reyes</strong><br /> <span class="text-small">Asesor pedagógico<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro industrial del diseño y la manufactura </span><br><span class="text-small">Regional Santander </span></p>
+                        <p class="footer-texto mb-2"><strong>Fanny Restrepo Morales</strong><br /><span class="text-small">Experta temática<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Comercio y Servicios - Risaralda</span></p>
+                        <p class="footer-texto mb-2"><strong>Maryuri Agudelo Franco</strong><br /><span class="text-small">Diseñadora instruccional<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Diseño y Metrología - Bogotá</span></p>
+                        <p class="footer-texto mb-2"><strong>Oscar Absalón Guevara</strong><br /> <span class="text-small">Evaluador instruccional<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Gestión Industrial - Bogotá</span></p>
+                        <p class="footer-texto mb-2"><strong>Martha Isabel Martínez Vargas</strong><br /> <span class="text-small">Corrección de estilo<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro industrial del diseño y la manufactura</span><br><span class="text-small">Regional Santander</span></p>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <h4 class="footer-subtitulo-2 mt-0">
+                            <div class="fa fa-caret-right mr-2"></div>Diseño y desarrollo de recursos educativos digitales
+                        </h4>
+                        <p class="footer-texto"><strong>Francisco José Lizcano Reyes </strong><br /> <span class="text-small">Responsable del equipo<br /></span></p>
+                        <p class="footer-texto"><strong>Leyson Fabian Castaño Perez</strong><br /> <span class="text-small">Integración de recursos y pruebas<br /></span></p>
+                        <p class="footer-texto"> <strong>Carlos Julian Ramirez Benitez</strong><br />
+                            <strong>Ernesto Navarro Jaimes</strong><br />
+                            <strong>Maria Camila Ovalle Ospina</strong><br />
+                            <strong>Yazmin Rocio Figueroa Pacheco</strong><br /><span class="text-small">Diseño web & producción audiovisual<br /></span></p>
+                        <p class="footer-texto"><strong>Edward Leonardo Pico Cabra</strong><br /> <span class="text-small">Desarrollo Front-End<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">CENTRO INDUSTRIAL DEL DISEÑO Y LA MANUFACTURA </span><br><span class="text-small">Regional Santander </span></p>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <div class="d-flex flex-column justify-content-center"><img src="assets/images/logos/senaLogo.svg" style="max-width:100px"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section id="cc">
+            <div class="container">
+                <div class="d-flex flex-column flex-sm-row"><span class="pr-3"><i class="icon cc"></i></span><span>Este material puede ser distribuido, copiado y exhibido por terceros si se muestra en los créditos. No se puede obtener ningún beneficio comercial y las obras derivadas tienen que estar bajo los mismos términos de la licencia que el trabajo original.</span></div>
+            </div>
+        </section><a class="scroll-to-top-btn">
+            <div class="fa fa-angle-up fa-2x"></div>
+        </a>
+        <script src="assets/js/vendor.js"></script>
+        <script src="js/local.js"></script>
+    </body>
+</html>

@@ -136,12 +136,6 @@
         "slug": "aleatoriedad",
         "title": "4.1 Medidas de tendencia central",
         "anchor": "medidas_de_tendencia_central"
-      },   
-      {
-        "icon": "fa fa-file-text-o",
-        "slug": "aleatoriedad",
-        "title": "4.2 Aplicación de las medidas de tendencia central",
-        "anchor": "aplicacion_medidas_de_tendencia_central"
       }
     ]
   },
@@ -164,12 +158,6 @@
         "slug": "probabilidad_clasica",
         "title": "5.2 Regla de la multiplicación en probabilidades",
         "anchor": "regla_de_la_multiplicacion_en_probabilidades"
-      },
-      {
-        "icon": "fa fa-file-text-o",
-        "slug": "probabilidad_clasica",
-        "title": "5.3 Aplicación de las Probabilidades",
-        "anchor": "aplicacion_de_las_Probabilidades"
       }
     ] 
   },

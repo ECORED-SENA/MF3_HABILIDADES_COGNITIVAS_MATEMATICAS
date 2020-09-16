@@ -4,7 +4,7 @@
     </div>
     <div class="jumbotron bg-white">
         <p>Se llama combinatoria a todas las posibles agrupaciones que pueden hacerse con m elementos de un conjunto. Existen tipos de combinatorias como, permutación y combinación, veamos en que consiste cada uno.</p>
-        <div class="sub-line" id="permutaciones">
+        <div class="sub-line mt-5" id="permutaciones">
             <h2>3.1 Permutaciones </h2>
         </div>
         <p>La permutación es la variación del orden de los elementos de un conjunto. Se destaca la palabra orden porque es necesario que los elementos tengan diferente posición. </p>
@@ -13,83 +13,68 @@
         <p>Para calcular el número de ordenaciones o permutaciones que se pueden hacer de r elementos de un conjunto n de elementos sin repetir combinaciones, se utiliza la fórmula:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img59.png" />
         <p>donde n! = n x (n-1) x (n-2) x (n -.) x 1, y cero (0)! = 1</p>
         <p>por ejemplo 5! = 5x4x3x2x1 = 120</p>
-        <div class="row justify-content-center align-items-center my-5">
-            <div class="col-10">
-                <h3>Ejemplo 1: </h3>
-                <p>Sea el conjunto A = {a, b, c}, hallar las posibles combinaciones o permutaciones de los tres elementos, sin repetir combinaciones</p>
-                <p>n = 3</p>
-                <p>r = 3</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img60.png" />
-                <p>Entonces se pueden hacer 6 combinaciones con diferente orden en sus elementos, como se muestra a continuación:</p>
-                <p class="text-center">(a, b, c), (a, c, b), (b, a, c), (b, c, a), (c, a, b), (c, b, a)</p>
-            </div>
-        </div>
-        <div class="row justify-content-center align-items-center my-5">
-            <div class="col-10">
-                <h3>Ejemplo 2: </h3>
-                <p>De cuantas maneras diferentes podemos combinar los números 3,4,5. </p>
-                <p>Lo que se pide calcular es P (3 ,3) y al igual que en el ejemplo anterior se obtienen 6 permutaciones:</p>
-                <p class="text-center">(3, 4, 5), (3, 5, 4), (4, 3, 5), (4, 5, 3), (5, 3, 4), (5, 4, 3)</p>
-            </div>
-        </div>
+        <h3>Ejemplo 1: </h3>
+        <p>Sea el conjunto A = {a, b, c}, hallar las posibles combinaciones o permutaciones de los tres elementos, sin repetir combinaciones</p>
+        <p>n = 3</p>
+        <p>r = 3</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img60.png" />
+        <p>Entonces se pueden hacer 6 combinaciones con diferente orden en sus elementos, como se muestra a continuación:</p>
+        <p class="text-center">(a, b, c), (a, c, b), (b, a, c), (b, c, a), (c, a, b), (c, b, a)</p>
+        <h3>Ejemplo 2: </h3>
+        <p>De cuantas maneras diferentes podemos combinar los números 3,4,5. </p>
+        <p>Lo que se pide calcular es P (3 ,3) y al igual que en el ejemplo anterior se obtienen 6 permutaciones:</p>
+        <p class="text-center">(3, 4, 5), (3, 5, 4), (4, 3, 5), (4, 5, 3), (5, 3, 4), (5, 4, 3)</p>
         <div class="sub-title-line mt-5">
             <h3>Permutación sin repetición: </h3>
         </div>
-        <p>Los elementos de la combinación no se pueden, luego se calcula utilizando la fórmula enunciada anteriormente. </p>
+        <p>Los elementos de la combinación no se pueden repetir, luego se calcula utilizando la fórmula enunciada anteriormente. </p>
         <div class="sub-title-line mt-5">
             <h3>Permutación sin repetición: </h3>
         </div>
         <p>Cuando se permite la repetición de r elementos contenidos en un conjunto n, para calcular el número de ordenaciones o permutaciones que se pueden hacer de r elementos, se utiliza la fórmula: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img61.png" />
-        <div class="row justify-content-center align-items-center my-5">
-            <div class="col-10">
-                <h3>Ejemplo: </h3>
-                <p>Cuántas permutaciones con repeticiones de los elementos se pueden hacer del conjunto </p>
-                <p>A = {3,4,5}</p>
-                <p class="mb-0">n = 3 elementos </p>
-                <p class="mb-0">r = 3 es decir se seleccionan los tres para las permutaciones </p>
-                <p>nr = 33. </p>
-                <p>Para combinar los números 3, 4 y 5 haciendo repeticiones de los tres números; se pueden hacer 33 permutaciones es decir 27. Por ejemplo, algunas de ellas podrían ser:</p>
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-8">
-                        <table class="table table-bordered table-striped text-center">
-                            <tbody>
-                                <tr class="table3">
-                                    <td>333</td>
-                                    <td>334</td>
-                                    <td>335</td>
-                                    <td>343</td>
-                                    <td>353</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr class="table3">
-                                    <td>444</td>
-                                    <td>443</td>
-                                    <td>445</td>
-                                    <td>454</td>
-                                    <td>434 </td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr class="table3">
-                                    <td>555</td>
-                                    <td>553</td>
-                                    <td>554</td>
-                                    <td>535</td>
-                                    <td>545</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p class="text-center">Tabla 7. Permutaciones del conjunto A </p>
-                    </div>
-                </div>
-                <p class="mt-5">Las anteriores combinaciones pueden corresponder a las combinaciones de una clave o caja fuerte. </p>
-                <h3>Recuerda que … </h3>
-                <p>En las permutaciones el orden de los elementos si importa, para conseguir combinaciones diferentes.</p>
+        <h3>Ejemplo: </h3>
+        <p>Cuántas permutaciones con repeticiones de los elementos se pueden hacer del conjunto </p>
+        <p>A = {3,4,5}</p>
+        <p class="mb-0">n = 3 elementos </p>
+        <p class="mb-0">r = 3 es decir se seleccionan los tres para las permutaciones </p>
+        <p>nr = 33. </p>
+        <p>Para combinar los números 3, 4 y 5 haciendo repeticiones de los tres números; se pueden hacer 33 permutaciones es decir 27. Por ejemplo, algunas de ellas podrían ser:</p>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-8">
+                <table class="table table-bordered table-striped text-center">
+                    <tbody>
+                        <tr class="table3">
+                            <td>333</td>
+                            <td>334</td>
+                            <td>335</td>
+                            <td>343</td>
+                            <td>353</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr class="table3">
+                            <td>444</td>
+                            <td>443</td>
+                            <td>445</td>
+                            <td>454</td>
+                            <td>434 </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr class="table3">
+                            <td>555</td>
+                            <td>553</td>
+                            <td>554</td>
+                            <td>535</td>
+                            <td>545</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-    </div>
-    <div class="jumbotron bg-white" id="aplicacion_de_las_permutaciones">
-        <div class="sub-line">
+        <p class="mt-5">Las anteriores combinaciones pueden corresponder a las combinaciones de una clave o caja fuerte. </p>
+        <h3>Recuerda que … </h3>
+        <p>En las permutaciones el orden de los elementos si importa, para conseguir combinaciones diferentes.</p>
+        <div class="sub-line mt-5" id="aplicacion_de_las_permutaciones">
             <h2>3.2 Aplicación de las permutaciones</h2>
         </div>
         <p>En una empresa se van a seleccionar tres cargos profesionales y se presentaron 12 personas en igualdad de condiciones académicas. El primer, segundo y tercer lugar en su orden ocuparán los cargos de jefe, coordinador y supervisor. Determinar de cuantas maneras posibles se puede hacer la selección.</p>
@@ -101,17 +86,13 @@
         <p>Luego se aplica: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img62.png" />
         <p>Entonces: </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img63.png" />
         <p>Luego hay 1320 formas de hacer la selección de los tres cargos. </p>
-    </div>
-    <div class="jumbotron bg-white" id="combinaciones">
-        <div class="sub-line">
+        <div class="sub-line mt-5" id="combinaciones">
             <h2>3.3 Combinaciones</h2>
         </div>
         <p>Una combinación es una selección no ordenada de r elementos de un conjunto que contiene n elementos distintos. </p>
         <p>Se llama combinación r de n elementos y se denota por medio de:</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img64.png" />
         <p>Una permutación de objetos implica ordenamiento, pero una combinación no toma en cuenta el orden. </p>
-    </div>
-    <div class="jumbotron bg-white" id="aplicacion_de_las_combinaciones">
-        <div class="sub-line">
+        <div class="sub-line mt-5" id="aplicacion_de_las_combinaciones">
             <h2>3.4 Aplicación de las combinaciones </h2>
         </div>
         <p>Se sortean dos computadoras iguales entre 10 personas. ¿De cuantas formas se puede escoger a los ganadores? </p>

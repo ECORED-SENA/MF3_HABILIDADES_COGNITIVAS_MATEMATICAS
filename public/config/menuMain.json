@@ -85,8 +85,15 @@
         "slug": "ecuaciones",
         "title": "2.4 Ecuaciones de segundo grado",
         "anchor": "ecuaciones_segundo_grado"
+      },   
+      {
+        "icon": "fa fa-file-text-o",
+        "slug": "ecuaciones",
+        "title": "2.5 Aplicación de las ecuaciones de segundo grado",
+        "anchor": "aplicacion_de_las_ecuaciones_de_segundo_grado"
       }
     ]
+    
   },
 
   {
@@ -106,7 +113,7 @@
       {
         "icon": "fa fa-file-text-o",
         "slug": "combinatoria",
-        "title": "3.2 plicación de las permutaciones",
+        "title": "3.2 Aplicación de las permutaciones",
         "anchor": "aplicacion_de_las_permutaciones"
       },
       {

@@ -5,7 +5,7 @@
     .jumbotron.bg-white
         p Se llama combinatoria a todas las posibles agrupaciones que pueden hacerse con m elementos de un conjunto. Existen tipos de combinatorias como, permutación y combinación, veamos en que consiste cada uno.
 
-        .sub-line#permutaciones
+        .sub-line.mt-5#permutaciones
             h2 3.1 Permutaciones 
         p La permutación es la variación del orden de los elementos de un conjunto. Se destaca la palabra orden porque es necesario que los elementos tengan diferente posición. 
 
@@ -22,31 +22,29 @@
         p donde n! = n x (n-1) x (n-2) x (n -.) x 1, y cero (0)! = 1
 
         p por ejemplo 5! = 5x4x3x2x1 = 120
-        .row.justify-content-center.align-items-center.my-5 
-            .col-10
-                h3 Ejemplo 1: 
-                p Sea el conjunto A = {a, b, c}, hallar las posibles combinaciones o permutaciones de los tres elementos, sin repetir combinaciones
-                p n = 3
-                p r = 3
 
-                img.img-a.my-5(src="assets/images/pages/ilustraciones/img60.png").img-fluid   
+        h3 Ejemplo 1: 
+        p Sea el conjunto A = {a, b, c}, hallar las posibles combinaciones o permutaciones de los tres elementos, sin repetir combinaciones
+        p n = 3
+        p r = 3
 
-                p Entonces se pueden hacer 6 combinaciones con diferente orden en sus elementos, como se muestra a continuación:
-                p.text-center (a, b, c), (a, c, b), (b, a, c), (b, c, a), (c, a, b), (c, b, a)
+        img.img-a.my-5(src="assets/images/pages/ilustraciones/img60.png").img-fluid   
 
-        .row.justify-content-center.align-items-center.my-5 
-            .col-10
-                h3 Ejemplo 2: 
+        p Entonces se pueden hacer 6 combinaciones con diferente orden en sus elementos, como se muestra a continuación:
+        p.text-center (a, b, c), (a, c, b), (b, a, c), (b, c, a), (c, a, b), (c, b, a)
 
-                p De cuantas maneras diferentes podemos combinar los números 3,4,5. 
 
-                p Lo que se pide calcular es P (3 ,3) y al igual que en el ejemplo anterior se obtienen 6 permutaciones:
+        h3 Ejemplo 2: 
 
-                p.text-center (3, 4, 5), (3, 5, 4), (4, 3, 5), (4, 5, 3), (5, 3, 4), (5, 4, 3)
+        p De cuantas maneras diferentes podemos combinar los números 3,4,5. 
+
+        p Lo que se pide calcular es P (3 ,3) y al igual que en el ejemplo anterior se obtienen 6 permutaciones:
+
+        p.text-center (3, 4, 5), (3, 5, 4), (4, 3, 5), (4, 5, 3), (5, 3, 4), (5, 4, 3)
 
         .sub-title-line.mt-5
             h3 Permutación sin repetición:  
-        p Los elementos de la combinación no se pueden, luego se calcula utilizando la fórmula enunciada anteriormente.    
+        p Los elementos de la combinación no se pueden repetir, luego se calcula utilizando la fórmula enunciada anteriormente.    
 
         .sub-title-line.mt-5
             h3 Permutación sin repetición:  
@@ -54,53 +52,52 @@
 
         img.img-a.my-5(src="assets/images/pages/ilustraciones/img61.png").img-fluid
 
-        .row.justify-content-center.align-items-center.my-5 
-            .col-10
-                h3 Ejemplo: 
-                p Cuántas permutaciones con repeticiones de los elementos se pueden hacer del conjunto  
-                p A = {3,4,5}
 
-                p.mb-0 n = 3 elementos 
-                p.mb-0 r = 3 es decir se seleccionan los tres para las permutaciones 
-                p nr = 33.  
+        h3 Ejemplo: 
+        p Cuántas permutaciones con repeticiones de los elementos se pueden hacer del conjunto  
+        p A = {3,4,5}
 
-                p Para combinar los números 3, 4 y 5 haciendo repeticiones de los tres números; se pueden hacer 33 permutaciones es decir 27. Por ejemplo, algunas de ellas podrían ser:
+        p.mb-0 n = 3 elementos 
+        p.mb-0 r = 3 es decir se seleccionan los tres para las permutaciones 
+        p nr = 33.  
 
-                .row.justify-content-center.align-items-center
-                    .col-8
-                        table.table.table-bordered.table-striped.text-center
-                            tbody
-                                tr.table3
-                                    td 333
-                                    td 334
-                                    td 335
-                                    td 343
-                                    td 353
-                            tbody
-                                tr.table3
-                                    td 444
-                                    td 443
-                                    td 445
-                                    td 454
-                                    td 434  
+        p Para combinar los números 3, 4 y 5 haciendo repeticiones de los tres números; se pueden hacer 33 permutaciones es decir 27. Por ejemplo, algunas de ellas podrían ser:
 
-                            tbody
-                                tr.table3
-                                    td 555
-                                    td 553
-                                    td 554
-                                    td 535
-                                    td 545
+        .row.justify-content-center.align-items-center
+            .col-8
+                table.table.table-bordered.table-striped.text-center
+                    tbody
+                        tr.table3
+                            td 333
+                            td 334
+                            td 335
+                            td 343
+                            td 353
+                    tbody
+                        tr.table3
+                            td 444
+                            td 443
+                            td 445
+                            td 454
+                            td 434  
 
-                        p.text-center Tabla 7. Permutaciones del conjunto A 
-                p.mt-5 Las anteriores combinaciones pueden corresponder a las combinaciones de una clave o caja fuerte. 
+                    tbody
+                        tr.table3
+                            td 555
+                            td 553
+                            td 554
+                            td 535
+                            td 545
 
-                h3 Recuerda que … 
 
-                p En las permutaciones el orden de los elementos si importa, para conseguir combinaciones diferentes.
+        p.mt-5 Las anteriores combinaciones pueden corresponder a las combinaciones de una clave o caja fuerte. 
 
-    .jumbotron.bg-white#aplicacion_de_las_permutaciones
-        .sub-line
+        h3 Recuerda que … 
+
+        p En las permutaciones el orden de los elementos si importa, para conseguir combinaciones diferentes.
+
+    
+        .sub-line.mt-5#aplicacion_de_las_permutaciones
             h2 3.2	Aplicación de las permutaciones
 
         p En una empresa se van a seleccionar tres cargos profesionales y se presentaron 12 personas en igualdad de condiciones académicas. El primer, segundo y tercer lugar en su orden ocuparán los cargos de jefe, coordinador y supervisor. Determinar de cuantas maneras posibles se puede hacer la selección.
@@ -124,8 +121,8 @@
 
         p Luego hay 1320 formas de hacer la selección de los tres cargos. 
 
-    .jumbotron.bg-white#combinaciones
-        .sub-line
+    
+        .sub-line.mt-5#combinaciones
             h2 3.3 Combinaciones
 
         p Una combinación es una selección no ordenada de r elementos de un conjunto que contiene n elementos distintos. 
@@ -136,8 +133,8 @@
 
         p Una permutación de objetos implica ordenamiento, pero una combinación no toma en cuenta el orden.  
 
-    .jumbotron.bg-white#aplicacion_de_las_combinaciones
-        .sub-line
+    
+        .sub-line.mt-5#aplicacion_de_las_combinaciones
             h2 3.4 Aplicación de las combinaciones              
         p Se sortean dos computadoras iguales entre 10 personas. ¿De cuantas formas se puede escoger a los ganadores? 
 

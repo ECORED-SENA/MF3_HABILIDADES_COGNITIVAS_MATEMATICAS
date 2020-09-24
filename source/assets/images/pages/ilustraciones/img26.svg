@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 632 380" style="enable-background:new 0 0 632 380;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st2{font-family:'Times-Bold';}
+	.st3{font-size:25px;}
+</style>
+<g id="Grupo_14457" transform="translate(-384 -3025)">
+	<rect id="Rectángulo_3681" x="384" y="3025" class="st0" width="632" height="380"/>
+	<g id="Grupo_14406" transform="translate(107.857 2962.972)">
+		<line id="Línea_457" class="st1" x1="588.8" y1="117.6" x2="588.8" y2="407.3"/>
+		<line id="Línea_458" class="st1" x1="425.8" y1="313.7" x2="774.5" y2="313.7"/>
+		<line id="Línea_459" class="st1" x1="443" y1="342.6" x2="716.6" y2="157.9"/>
+		<line id="Línea_460" class="st1" x1="443" y1="305.6" x2="443" y2="318.6"/>
+		<line id="Línea_461" class="st1" x1="471.8" y1="305.6" x2="471.8" y2="318.6"/>
+		<line id="Línea_462" class="st1" x1="500.7" y1="305.6" x2="500.7" y2="318.6"/>
+		<line id="Línea_463" class="st1" x1="529.6" y1="305.6" x2="529.6" y2="318.6"/>
+		<line id="Línea_464" class="st1" x1="677.2" y1="305.6" x2="677.2" y2="318.6"/>
+		<line id="Línea_465" class="st1" x1="706" y1="305.6" x2="706" y2="318.6"/>
+		<line id="Línea_466" class="st1" x1="734.9" y1="305.6" x2="734.9" y2="318.6"/>
+		<line id="Línea_467" class="st1" x1="619.5" y1="305.6" x2="619.5" y2="318.6"/>
+		<line id="Línea_468" class="st1" x1="648.3" y1="305.6" x2="648.3" y2="318.6"/>
+		<line id="Línea_469" class="st1" x1="763.8" y1="305.6" x2="763.8" y2="318.6"/>
+		<line id="Línea_470" class="st1" x1="582.3" y1="255.1" x2="595.2" y2="255.1"/>
+		<line id="Línea_471" class="st1" x1="582.3" y1="226.2" x2="595.2" y2="226.2"/>
+		<line id="Línea_472" class="st1" x1="582.3" y1="197.4" x2="595.2" y2="197.4"/>
+		<line id="Línea_473" class="st1" x1="582.3" y1="168.5" x2="595.2" y2="168.5"/>
+		<line id="Línea_474" class="st1" x1="582.3" y1="342.1" x2="595.2" y2="342.1"/>
+		<line id="Línea_475" class="st1" x1="582.3" y1="371" x2="595.2" y2="371"/>
+		<line id="Línea_476" class="st1" x1="582.3" y1="284.4" x2="595.2" y2="284.4"/>
+		<text transform="matrix(1 0 0 1 758.813 334.519)" class="st2 st3">x</text>
+		<text transform="matrix(1 0 0 1 563.747 117.028)" class="st2 st3">y</text>
+		<text transform="matrix(1 0 0 1 413.143 256.818)" class="st2 st3">2x - 3y + 7 - 0</text>
+	</g>
+	<circle id="Elipse_855" cx="636.5" cy="3246.5" r="4.5"/>
+	<circle id="Elipse_856" cx="725.5" cy="3187.5" r="4.5"/>
+</g>
+</svg>
